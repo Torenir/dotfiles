@@ -1,0 +1,6 @@
+Command=audtool current-song-output-length
+UseLabel=1
+Text=%\ \ 
+UpdatePeriod=2000
+Font=Noto Sans Display 9
+
