@@ -11,13 +11,13 @@
   <property name="shortcuts-icon-emblems" type="bool" value="true"/>
   <property name="tree-icon-emblems" type="bool" value="true"/>
   <property name="misc-middle-click-in-tab" type="bool" value="true"/>
-  <property name="last-separator-position" type="int" value="170"/>
+  <property name="last-separator-position" type="int" value="172"/>
   <property name="last-window-maximized" type="bool" value="false"/>
-  <property name="last-show-hidden" type="bool" value="true"/>
+  <property name="last-show-hidden" type="bool" value="false"/>
   <property name="last-sort-column" type="string" value="THUNAR_COLUMN_NAME"/>
   <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
-  <property name="last-window-width" type="int" value="792"/>
-  <property name="last-window-height" type="int" value="462"/>
+  <property name="last-window-width" type="int" value="956"/>
+  <property name="last-window-height" type="int" value="527"/>
   <property name="last-menubar-visible" type="bool" value="true"/>
   <property name="hidden-bookmarks" type="array">
     <value type="string" value="network:///"/>
@@ -27,7 +27,7 @@
   <property name="misc-recursive-permissions" type="string" value="THUNAR_RECURSIVE_PERMISSIONS_ASK"/>
   <property name="last-side-pane" type="string" value="ThunarTreePane"/>
   <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_25_PERCENT"/>
-  <property name="last-details-view-column-widths" type="string" value="50,112,64,93,139,69,101,54,106,82"/>
+  <property name="last-details-view-column-widths" type="string" value="50,112,64,93,248,69,101,63,106,126"/>
   <property name="misc-folders-first" type="bool" value="true"/>
   <property name="misc-file-size-binary" type="bool" value="true"/>
   <property name="last-statusbar-visible" type="bool" value="true"/>
@@ -35,4 +35,10 @@
   <property name="last-details-view-column-order" type="string" value="THUNAR_COLUMN_NAME,THUNAR_COLUMN_SIZE,THUNAR_COLUMN_SIZE_IN_BYTES,THUNAR_COLUMN_TYPE,THUNAR_COLUMN_DATE_MODIFIED,THUNAR_COLUMN_PERMISSIONS,THUNAR_COLUMN_OWNER,THUNAR_COLUMN_DATE_ACCESSED,THUNAR_COLUMN_GROUP,THUNAR_COLUMN_MIME_TYPE"/>
   <property name="misc-parallel-copy-mode" type="string" value="THUNAR_PARALLEL_COPY_MODE_ALWAYS"/>
   <property name="misc-confirm-close-multiple-tabs" type="bool" value="false"/>
+  <property name="misc-change-window-icon" type="bool" value="true"/>
+  <property name="misc-thumbnail-mode" type="string" value="THUNAR_THUMBNAIL_MODE_NEVER"/>
+  <property name="default-view" type="string" value="void"/>
+  <property name="misc-thumbnail-draw-frames" type="bool" value="false"/>
+  <property name="tree-icon-size" type="string" value="THUNAR_ICON_SIZE_16"/>
+  <property name="misc-show-about-templates" type="bool" value="false"/>
 </channel>

@@ -89,6 +89,10 @@
         <value type="string" value="thunar"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="systray"/>
+        <value type="string" value="Ripcord"/>
+        <value type="string" value="virt-manager"/>
+        <value type="string" value="Audacious"/>
         <value type="string" value="Skype1"/>
         <value type="string" value="obs"/>
         <value type="string" value="Microsoft Teams - Preview1"/>
@@ -99,6 +103,7 @@
       </property>
       <property name="hidden-items" type="array">
         <value type="string" value="discover_overlay"/>
+        <value type="string" value="Bitwarden1"/>
       </property>
       <property name="hidden-legacy-items" type="array">
       </property>
@@ -111,6 +116,7 @@
     <property name="plugin-12" type="string" value="clock">
       <property name="digital-format" type="string" value="%Y-%m-%d  %H:%M:%S"/>
       <property name="mode" type="uint" value="2"/>
+      <property name="tooltip-format" type="string" value="%A %d %B %Y"/>
     </property>
     <property name="plugin-14" type="string" value="actions">
       <property name="appearance" type="uint" value="0"/>
@@ -132,7 +138,7 @@
     <property name="plugin-2" type="string" value="xfce4-clipman-plugin"/>
     <property name="clipman" type="empty">
       <property name="tweaks" type="empty">
-        <property name="never-confirm-history-clear" type="bool" value="false"/>
+        <property name="never-confirm-history-clear" type="bool" value="true"/>
         <property name="reorder-items" type="bool" value="false"/>
         <property name="reverse-menu-order" type="bool" value="false"/>
         <property name="inhibit" type="bool" value="false"/>

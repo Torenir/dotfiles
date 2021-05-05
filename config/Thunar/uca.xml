@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <actions>
 <action>
-	<icon>utilities-terminal</icon>
-	<name>Open Terminal Here</name>
+	<icon>Alacritty</icon>
+	<name>Terminal</name>
 	<unique-id>1607025819820600-1</unique-id>
 	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
-	<description>Example for a custom action</description>
+	<description>Opens terminal in current directory</description>
 	<patterns>*</patterns>
 	<startup-notify/>
 	<directories/>

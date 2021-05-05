@@ -1,0 +1,6 @@
+$HOME/.config/xinit &
+xrdb -merge ~/.config/Xresources &
+dunst &
+unclutter --timeout 2 --jitter 4 &
+
+exec xfce4-session
