@@ -1,6 +1,6 @@
-Command=pamixer --source @DEFAULT_SOURCE@ --get-volume-human
+Command=audtool current-song-length
 UseLabel=1
-Text=\ \ mic:\ 
-UpdatePeriod=2000
+Text=\ /\ 
+UpdatePeriod=6000
 Font=Noto Sans Display 9
 

@@ -1,7 +1,6 @@
 #!/bin/sh
 
 sleep 1.4
-boty &
 firefox &
 sleep 4
 
@@ -12,7 +11,6 @@ xdotool key Super_L+c
 #transmission-gtk &
 audacious &
 sleep 0.7
-xdotool key Super_L+z
 pavucontrol &
 sleep 0.5
 xdotool key Super_L+w
@@ -24,3 +22,6 @@ xdotool key Super_L+F2
 
 xmodmap -e 'keycode 135 = Super_R'
 xmodmap -e 'keycode 91 = Delete period period Delete'
+Tasten &
+sleep 1
+sudo Tasten-client -d event14 &

@@ -27,7 +27,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'cocopon/iceberg.vim'
 Plug 'arcticicestudio/nord-vim'
-Plug 'preservim/nerdtree'
 Plug 'itchyny/lightline.vim'
 Plug 'ervandew/supertab'
 Plug 'vim-python/python-syntax'
@@ -38,5 +37,3 @@ set noshowmode
 colorscheme nord
 " hi Normal guibg=NONE ctermbg=NONE
 set termguicolors
-
-map <C-n> :NERDTreeToggle<CR>

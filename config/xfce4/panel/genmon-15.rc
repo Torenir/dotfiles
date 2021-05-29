@@ -1,6 +1,6 @@
-Command=audtool get-volume
+Command=pamixer --sink @DEFAULT_SINK@ --get-volume-human
 UseLabel=1
-Text=\ \ \ audacious:\ 
+Text=\ \ \ volume:\ 
 UpdatePeriod=2000
 Font=Noto Sans Display 9
 
