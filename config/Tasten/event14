@@ -27,15 +27,15 @@ KEY_PAGEDOWN p : pactl set-sink-volume @DEFAULT_SINK@ +2%
 KEY_LEFT p : xdotool key ctrl+alt+shift+F1
 KEY_DOWN p : xdotool key ctrl+alt+shift+F2
 KEY_RIGHT p : xdotool key ctrl+alt+shift+F3
-KEY_UP p : discord
-KEY_UP h : ripcord
+KEY_UP p : discord &
+KEY_UP h : ripcord &
 
 #miscelaous
-KEY_ENTER p : alacritty
-KEY_G p : gcolor2
-KEY_G h : gimp
+KEY_ENTER p : alacritty &
+KEY_G p : gcolor2 &
+KEY_G h : gimp &
 
 #files
-KEY_V p : veracrypt
+KEY_V p : veracrypt &
 KEY_T p : thunar
 KEY_T h : thunar -B

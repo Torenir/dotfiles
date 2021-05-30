@@ -1,4 +1,4 @@
-Command=sh -c "audtool current-song-filename | awk -F '/' '{print $NF}' | awk -F '.' '{print $1}'"\ 
+Command=sh -c "audtool current-song-filename | awk -F '/' '{print $NF}' | sed 's/.mp3//'"\ 
 UseLabel=0
 Text=
 UpdatePeriod=1000
