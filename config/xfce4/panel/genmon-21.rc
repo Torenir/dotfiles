@@ -1,6 +1,6 @@
 Command=audtool current-song-length
 UseLabel=1
 Text=\ /\ 
-UpdatePeriod=6000
+UpdatePeriod=4000
 Font=Noto Sans Display 9
 

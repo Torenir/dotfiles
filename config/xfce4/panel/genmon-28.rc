@@ -1,0 +1,6 @@
+Command=sh -c "audtool current-song-filename | awk -F '/' '{print $NF}' | awk -F '.' '{print $1}'"\ 
+UseLabel=0
+Text=
+UpdatePeriod=1000
+Font=Noto Sans Display 9
+

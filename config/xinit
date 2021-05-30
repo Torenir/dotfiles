@@ -2,15 +2,15 @@
 
 sleep 1.4
 firefox &
+audacious -H &
 sleep 4
 
 xdotool key Super_L+F5
 alacritty -e 'htop' &
 sleep 0.5
 xdotool key Super_L+c
-#transmission-gtk &
-audacious &
-sleep 0.7
+transmission-gtk &
+sleep 4
 pavucontrol &
 sleep 0.5
 xdotool key Super_L+w

@@ -1,23 +1,41 @@
 #audacious
 KEY_KPENTER p : audtool current-song | xargs --null notify-send -t 3000
 KEY_KP0 p : audtool playback-playpause
-KEY_KP0 h : audtool playback-seek 0
+KEY_KPDOT p : audtool playback-seek 0
 KEY_KP1 p : audtool set-volume -2%
 KEY_KP2 p : audtool set-volume +2%
-KEY_KP3 p : audtool playback-seek-relative 10
-KEY_KP3 h : audtool playlist-advance
-KEY_KP6 p : audtool playback-seek-relative -10
-KEY_KP6 h : audtool playlist-reverse
+KEY_KP6 p : audtool playlist-reverse
+KEY_KP3 p : audtool playlist-advance
+KEY_KP4 p : audtool playback-seek-relative -5
+KEY_KP5 p : audtool playback-seek-relative 5
+KEY_KP4 h : audtool playback-seek-relative -15
+KEY_KP5 h : audtool playback-seek-relative 15
+KEY_KPPLUS p : audtool current-playlist-name | xargs notify-send
+KEY_KP7 p : audtool set-current-playlist 1
+KEY_KP8 p : audtool set-current-playlist 2
+KEY_KP9 p : audtool set-current-playlist 3
 
 #pulseaudio
-KEY_NUMLOCK p : pactl set-source-mute @DEFAULT_SOURCE@ toggle
-KEY_KPSLASH p : pactl set-source-volume @DEFAULT_SOURCE@ -2%
-KEY_KPASTERISK p : pactl set-source-volume @DEFAULT_SOURCE@ +2%
-KEY_KP7 p : pactl set-sink-mute @DEFAULT_SINK@ toggle
-KEY_KP8 p : pactl set-sink-volume @DEFAULT_SINK@ -2%
-KEY_KP9 p : pactl set-sink-volume @DEFAULT_SINK@ +2%
+KEY_INSERT p : pactl set-source-mute @DEFAULT_SOURCE@ toggle
+KEY_HOME p : pactl set-source-volume @DEFAULT_SOURCE@ -2%
+KEY_PAGEUP p : pactl set-source-volume @DEFAULT_SOURCE@ +2%
+KEY_DELETE p : pactl set-sink-mute @DEFAULT_SINK@ toggle
+KEY_END p : pactl set-sink-volume @DEFAULT_SINK@ -2%
+KEY_PAGEDOWN p : pactl set-sink-volume @DEFAULT_SINK@ +2%
 
 #discord shortcuts
 KEY_LEFT p : xdotool key ctrl+alt+shift+F1
 KEY_DOWN p : xdotool key ctrl+alt+shift+F2
 KEY_RIGHT p : xdotool key ctrl+alt+shift+F3
+KEY_UP p : discord
+KEY_UP h : ripcord
+
+#miscelaous
+KEY_ENTER p : alacritty
+KEY_G p : gcolor2
+KEY_G h : gimp
+
+#files
+KEY_V p : veracrypt
+KEY_T p : thunar
+KEY_T h : thunar -B
