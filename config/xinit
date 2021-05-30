@@ -1,27 +1,26 @@
 #!/bin/sh
 
+Tasten &
 sleep 1.4
 firefox &
+sudo Tasten-client -d event14 &
 audacious -H &
 sleep 4
 
-xdotool key Super_L+F5
+wmctrl -s 4
 alacritty -e 'htop' &
 sleep 0.5
-xdotool key Super_L+c
+wmctrl -r :ACTIVE: -e 0,960,549,956,527
 transmission-gtk &
 sleep 4
 pavucontrol &
 sleep 0.5
-xdotool key Super_L+w
-xdotool key Super_L+F4
+wmctrl -r :ACTIVE: -e 0,0,18,1916,527
+
+wmctrl -s 3
 ripcord &
 sleep 1
-xdotool key Super_L+F2
-################
+wmctrl -s 1
 
 xmodmap -e 'keycode 135 = Super_R'
 xmodmap -e 'keycode 91 = Delete period period Delete'
-Tasten &
-sleep 1
-sudo Tasten-client -d event14 &

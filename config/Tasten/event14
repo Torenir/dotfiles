@@ -1,3 +1,44 @@
+#above fullscreen and cycle
+KEY_R p : xdotool key ctrl+Super_R+alt+shift+a
+KEY_F p : xdotool key ctrl+Super_R+alt+shift+f
+KEY_TAB p : xdotool key shift+ctrl+ISO_Left_Tab
+
+#switch workspaces
+KEY_1 p : wmctrl -s 0
+KEY_2 p : wmctrl -s 1
+KEY_3 p : wmctrl -s 2
+KEY_4 p : wmctrl -s 3
+KEY_5 p : wmctrl -s 4
+
+#move windows across workspaces
+KEY_1 h : wmctrl -t 0 -r :ACTIVE:
+KEY_2 h : wmctrl -t 1 -r :ACTIVE:
+KEY_3 h : wmctrl -t 2 -r :ACTIVE:
+KEY_4 h : wmctrl -t 3 -r :ACTIVE:
+KEY_5 h : wmctrl -t 4 -r :ACTIVE:
+
+#tile windows in a 2x2 grid
+KEY_Q p : wmctrl -r :ACTIVE: -e 0,0,18,956,527
+KEY_W p : wmctrl -r :ACTIVE: -e 0,0,18,1916,527
+KEY_E p : wmctrl -r :ACTIVE: -e 0,960,18,956,527
+KEY_A p : wmctrl -r :ACTIVE: -e 0,0,18,956,1057
+KEY_S p : wmctrl -r :ACTIVE: -e 0,0,18,1916,1057
+KEY_D p : wmctrl -r :ACTIVE: -e 0,960,18,956,1057
+KEY_Z p : wmctrl -r :ACTIVE: -e 0,0,549,956,527
+KEY_X p : wmctrl -r :ACTIVE: -e 0,0,549,1916,527
+KEY_C p : wmctrl -r :ACTIVE: -e 0,960,549,956,527
+
+#tile windows in a 3x2 grid
+KEY_Q h : wmctrl -r :ACTIVE: -e 0,0,18,636,527
+KEY_W h : wmctrl -r :ACTIVE: -e 0,640,18,636,527
+KEY_E h : wmctrl -r :ACTIVE: -e 0,1280,18,636,527
+KEY_A h : wmctrl -r :ACTIVE: -e 0,0,18,636,1057
+KEY_S h : wmctrl -r :ACTIVE: -e 0,640,18,636,1057
+KEY_D h : wmctrl -r :ACTIVE: -e 0,1280,18,636,1057
+KEY_Z h : wmctrl -r :ACTIVE: -e 0,0,549,636,527
+KEY_X h : wmctrl -r :ACTIVE: -e 0,640,549,636,527
+KEY_C h : wmctrl -r :ACTIVE: -e 0,1280,549,636,527
+
 #audacious
 KEY_KPENTER p : audtool current-song | xargs --null notify-send -t 3000
 KEY_KP0 p : audtool playback-playpause
@@ -10,7 +51,7 @@ KEY_KP4 p : audtool playback-seek-relative -5
 KEY_KP5 p : audtool playback-seek-relative 5
 KEY_KP4 h : audtool playback-seek-relative -15
 KEY_KP5 h : audtool playback-seek-relative 15
-KEY_KPPLUS p : audtool current-playlist-name | xargs notify-send
+KEY_KPPLUS p : audtool current-playlist-name | xargs notify-send -t 2000
 KEY_KP7 p : audtool set-current-playlist 1
 KEY_KP8 p : audtool set-current-playlist 2
 KEY_KP9 p : audtool set-current-playlist 3
@@ -18,10 +59,14 @@ KEY_KP9 p : audtool set-current-playlist 3
 #pulseaudio
 KEY_INSERT p : pactl set-source-mute @DEFAULT_SOURCE@ toggle
 KEY_HOME p : pactl set-source-volume @DEFAULT_SOURCE@ -2%
+KEY_HOME h : pactl set-source-volume @DEFAULT_SOURCE@ -10%
 KEY_PAGEUP p : pactl set-source-volume @DEFAULT_SOURCE@ +2%
+KEY_PAGEUP h : pactl set-source-volume @DEFAULT_SOURCE@ +10%
 KEY_DELETE p : pactl set-sink-mute @DEFAULT_SINK@ toggle
 KEY_END p : pactl set-sink-volume @DEFAULT_SINK@ -2%
+KEY_END h : pactl set-sink-volume @DEFAULT_SINK@ -10%
 KEY_PAGEDOWN p : pactl set-sink-volume @DEFAULT_SINK@ +2%
+KEY_PAGEDOWN h : pactl set-sink-volume @DEFAULT_SINK@ +10%
 
 #discord shortcuts
 KEY_LEFT p : xdotool key ctrl+alt+shift+F1
@@ -31,11 +76,15 @@ KEY_UP p : discord &
 KEY_UP h : ripcord &
 
 #miscelaous
+KEY_ESC p : xflock4 &
+KEY_BACKSPACE p : xdotool getwindowfocus windowclose
+KEY_BACKSPACE h : xdotool getwindowfocus windowkill
+
 KEY_ENTER p : alacritty &
 KEY_G p : gcolor2 &
 KEY_G h : gimp &
+KEY_Y p : freetube &
 
-#files
 KEY_V p : veracrypt &
-KEY_T p : thunar
-KEY_T h : thunar -B
+KEY_T p : thunar &
+KEY_T h : thunar -B &

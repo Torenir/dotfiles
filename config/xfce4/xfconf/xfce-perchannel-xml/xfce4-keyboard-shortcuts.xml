@@ -54,14 +54,11 @@
       <property name="&lt;Super&gt;q" type="empty">
         <property name="startup-notify" type="bool" value="true"/>
       </property>
-      <property name="&lt;Super&gt;KP_Enter" type="string" value="xfconf-query -c accessibility -p /MouseKeys -T"/>
-      <property name="&lt;Super&gt;t" type="string" value="thunar"/>
-      <property name="&lt;Super&gt;Return" type="string" value="alacritty"/>
       <property name="Reload" type="string" value="dmenu_run -b -i -f -nf &apos;#FFFFFF&apos; -fn &apos;Noto Sans Display Regular-9&apos;"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;BackSpace" type="string" value="sh -c &quot;kill -15 $(xprop -id $(xdotool getwindowfocus) | grep PID | awk &apos;{print $3}&apos;)&quot;"/>
-      <property name="&lt;Super&gt;Escape" type="string" value="xflock4"/>
       <property name="HomePage" type="string" value="xfconf-query -c xfwm4 -p /general/use_compositing -T"/>
       <property name="Print" type="string" value="scrot Pictures/screenshots/&apos;%Y-%M-%d %H:%m:%S.png&apos;"/>
+      <property name="Explorer" type="string" value="xfconf-query -c accessibility -p /MouseKeys -T"/>
+      <property name="&lt;Primary&gt;Escape" type="string" value="xflock4"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -137,27 +134,10 @@
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;Up" type="string" value="move_window_up_key"/>
       <property name="Left" type="string" value="left_key"/>
       <property name="override" type="bool" value="true"/>
-      <property name="&lt;Super&gt;BackSpace" type="string" value="close_window_key"/>
-      <property name="&lt;Super&gt;s" type="string" value="maximize_window_key"/>
-      <property name="&lt;Super&gt;r" type="string" value="above_key"/>
-      <property name="&lt;Super&gt;f" type="string" value="fullscreen_key"/>
-      <property name="&lt;Super&gt;v" type="string" value="move_window_prev_workspace_key"/>
-      <property name="&lt;Super&gt;b" type="string" value="move_window_next_workspace_key"/>
-      <property name="&lt;Super&gt;w" type="string" value="tile_up_key"/>
-      <property name="&lt;Super&gt;x" type="string" value="tile_down_key"/>
-      <property name="&lt;Super&gt;a" type="string" value="tile_left_key"/>
-      <property name="&lt;Super&gt;d" type="string" value="tile_right_key"/>
-      <property name="&lt;Super&gt;q" type="string" value="tile_up_left_key"/>
-      <property name="&lt;Super&gt;e" type="string" value="tile_up_right_key"/>
-      <property name="&lt;Super&gt;z" type="string" value="tile_down_left_key"/>
-      <property name="&lt;Super&gt;c" type="string" value="tile_down_right_key"/>
-      <property name="&lt;Super&gt;Tab" type="string" value="cycle_windows_key"/>
-      <property name="&lt;Shift&gt;&lt;Super&gt;ISO_Left_Tab" type="string" value="cycle_reverse_windows_key"/>
-      <property name="&lt;Super&gt;F1" type="string" value="workspace_1_key"/>
-      <property name="&lt;Super&gt;F2" type="string" value="workspace_2_key"/>
-      <property name="&lt;Super&gt;F3" type="string" value="workspace_3_key"/>
-      <property name="&lt;Super&gt;F4" type="string" value="workspace_4_key"/>
-      <property name="&lt;Super&gt;F5" type="string" value="workspace_5_key"/>
+      <property name="&lt;Primary&gt;Tab" type="string" value="cycle_windows_key"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;ISO_Left_Tab" type="string" value="cycle_reverse_windows_key"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;&lt;Super&gt;a" type="string" value="above_key"/>
+      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;&lt;Super&gt;f" type="string" value="fullscreen_key"/>
     </property>
   </property>
   <property name="providers" type="array">
