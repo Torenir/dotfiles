@@ -43,10 +43,10 @@ KEY_C h : wmctrl -r :ACTIVE: -e 0,1280,549,636,527
 KEY_KPENTER p : audtool current-song | xargs --null notify-send -t 3000
 KEY_KP0 p : audtool playback-playpause
 KEY_KPDOT p : audtool playback-seek 0
-KEY_KP1 p : audtool set-volume -2%
-KEY_KP2 p : audtool set-volume +2%
-KEY_KP6 p : audtool playlist-reverse
-KEY_KP3 p : audtool playlist-advance
+KEY_KP3 p : audtool set-volume -2%
+KEY_KP6 p : audtool set-volume +2%
+KEY_KP1 p : audtool playlist-reverse
+KEY_KP2 p : audtool playlist-advance
 KEY_KP4 p : audtool playback-seek-relative -5
 KEY_KP5 p : audtool playback-seek-relative 5
 KEY_KP4 h : audtool playback-seek-relative -15
@@ -77,13 +77,15 @@ KEY_UP h : ripcord &
 
 #miscelaous
 KEY_ESC p : xflock4 &
-KEY_BACKSPACE p : xdotool getwindowfocus windowclose
+KEY_BACKSPACE p : xdotool key ctrl+Super_R+alt+shift+BackSpace
 KEY_BACKSPACE h : xdotool getwindowfocus windowkill
 
 KEY_ENTER p : alacritty &
 KEY_G p : gcolor2 &
 KEY_G h : gimp &
 KEY_Y p : freetube &
+KEY_B p : firefox &
+KEY_B h : chromium &
 
 KEY_V p : veracrypt &
 KEY_T p : thunar &
