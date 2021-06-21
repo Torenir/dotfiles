@@ -41,4 +41,6 @@
   <property name="misc-thumbnail-draw-frames" type="bool" value="false"/>
   <property name="tree-icon-size" type="string" value="THUNAR_ICON_SIZE_16"/>
   <property name="misc-show-about-templates" type="bool" value="false"/>
+  <property name="misc-image-size-in-statusbar" type="bool" value="true"/>
+  <property name="misc-small-toolbar-icons" type="bool" value="true"/>
 </channel>

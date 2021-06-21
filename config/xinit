@@ -1,26 +1,22 @@
 #!/bin/sh
 
 Tasten &
-sleep 1.4
-firefox &
-sudo Tasten-client -d event14 &
+sleep 1
+sudo Tasten-client -d usb-SIGMACHIP_USB_Keyboard-event-kbd &
 audacious -H &
-sleep 4
 
 wmctrl -s 4
+transmission-gtk &
 alacritty -e 'htop' &
 sleep 0.5
 wmctrl -r :ACTIVE: -e 0,960,549,956,527
-transmission-gtk &
-sleep 4
+ripcord &
+sleep 5
 pavucontrol &
 sleep 0.5
-wmctrl -r :ACTIVE: -e 0,0,18,1916,527
-
-wmctrl -s 3
-ripcord &
-sleep 1
-wmctrl -s 1
+wmctrl -r :ACTIVE: -e 0,0,549,956,527
+wmctrl -s 0
+falkon &
 
 xmodmap -e 'keycode 135 = Super_R'
 xmodmap -e 'keycode 91 = Delete period period Delete'

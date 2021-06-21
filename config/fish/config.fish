@@ -13,6 +13,7 @@ alias gita='git add'
 alias gitc='git commit -m'
 
 alias yt-mp3='youtube-dl --add-header 'Cookie:' --extract-audio --audio-format mp3'
+alias steam='steam -silent'
 
 echo; neofetch
 
