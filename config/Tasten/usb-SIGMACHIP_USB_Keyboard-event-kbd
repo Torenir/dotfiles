@@ -77,14 +77,14 @@ KEY_UP h : ripcord &
 
 #miscelaous
 KEY_ESC p : xflock4 &
-KEY_BACKSPACE p : xdotool key ctrl+Super_R+alt+shift+BackSpace
+KEY_BACKSPACE p : xdotool key Super_R+BackSpace
 KEY_BACKSPACE h : xdotool getwindowfocus windowkill
 
 KEY_ENTER p : alacritty &
 KEY_G p : gcolor2 &
 KEY_G h : gimp &
 KEY_Y p : freetube &
-KEY_B p : firefox &
+KEY_B p : falkon &
 KEY_B h : chromium &
 
 KEY_V p : veracrypt &

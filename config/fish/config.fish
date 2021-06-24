@@ -1,5 +1,10 @@
-set fish_greeting # remove fish greeting at the start
-export QT_QPA_PLATFORMTHEME=gtk2
+set fish_greeting #remove fish greeting at the start
+export QT_QPA_PLATFORMTHEME=gtk2 #render qt using gtk themes
+
+#force use of gtk3-nocsd
+export GTK_CSD=0
+export LD_PRELOAD=/usr/lib/libgtk3-nocsd.so.0
+
 set -gx MANPAGER "nvim -c 'set ft=man' -"
 
 alias lsa='ls -A'

@@ -56,9 +56,10 @@
       </property>
       <property name="Reload" type="string" value="dmenu_run -b -i -f -nf &apos;#FFFFFF&apos; -fn &apos;Noto Sans Display Regular-9&apos;"/>
       <property name="HomePage" type="string" value="xfconf-query -c xfwm4 -p /general/use_compositing -T"/>
-      <property name="Print" type="string" value="scrot Pictures/screenshots/&apos;%Y-%M-%d %H:%m:%S.png&apos;"/>
       <property name="Explorer" type="string" value="xfconf-query -c accessibility -p /MouseKeys -T"/>
       <property name="&lt;Primary&gt;Escape" type="string" value="xflock4"/>
+      <property name="Print" type="string" value="scrot Pictures/screenshots/&apos;%Y-%m-%d %H:%M:%S.png&apos;"/>
+      <property name="&lt;Super&gt;Return" type="string" value="alacritty"/>
     </property>
   </property>
   <property name="xfwm4" type="empty">
@@ -137,8 +138,8 @@
       <property name="&lt;Primary&gt;&lt;Shift&gt;ISO_Left_Tab" type="string" value="cycle_reverse_windows_key"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;&lt;Super&gt;a" type="string" value="above_key"/>
       <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;&lt;Super&gt;f" type="string" value="fullscreen_key"/>
-      <property name="&lt;Primary&gt;&lt;Shift&gt;&lt;Alt&gt;&lt;Super&gt;BackSpace" type="string" value="close_window_key"/>
       <property name="&lt;Primary&gt;Tab" type="string" value="cycle_windows_key"/>
+      <property name="&lt;Super&gt;BackSpace" type="string" value="close_window_key"/>
     </property>
   </property>
   <property name="providers" type="array">
