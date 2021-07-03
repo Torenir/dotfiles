@@ -2,5 +2,5 @@ Command=audtool get-volume
 UseLabel=1
 Text=\ \ \ audacious:\ 
 UpdatePeriod=2000
-Font=Noto Sans Display 9
+Font=Cantarell 9
 

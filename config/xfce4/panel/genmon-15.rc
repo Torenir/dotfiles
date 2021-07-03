@@ -2,5 +2,5 @@ Command=pamixer --sink @DEFAULT_SINK@ --get-volume-human
 UseLabel=1
 Text=\ \ \ speakers:\ 
 UpdatePeriod=2000
-Font=Noto Sans Display 9
+Font=Cantarell 9
 

@@ -29,7 +29,7 @@
     # the top and down respectively.
     # The width can be negative.  In this case the actual width is the
     # screen width minus the width defined in within the geometry option.
-    geometry = "0x0+0+19"
+    geometry = "0x0+0+18"
 
     # Show how many messages are currently hidden (because of geometry).
     indicate_hidden = yes
@@ -275,16 +275,16 @@
     # Xev might be helpful to find names for keys.
 
     # Close notification.
-    close = ctrl+space
+    close = XF86HomePage
 
     # Close all notifications.
-    close_all = alt+space
+    close_all = XF86Mail
 
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1". Make sure this key actually exists on your keyboard layout,
     # e.g. check output of 'xmodmap -pke'
-    history = mod4+n
+    history = XF86Search
 
     # Context menu.
     context = ctrl+shift+period

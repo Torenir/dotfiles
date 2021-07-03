@@ -1,7 +1,8 @@
 #above fullscreen and cycle
-KEY_R p : xdotool key ctrl+Super_R+alt+shift+a
-KEY_F p : xdotool key ctrl+Super_R+alt+shift+f
+KEY_R p : wmctrl -r :ACTIVE: -b toggle,above
+KEY_F p : wmctrl -r :ACTIVE: -b toggle,fullscreen
 KEY_TAB p : xdotool key shift+ctrl+ISO_Left_Tab
+KEY_TAB h : xdotool key shift+ctrl+ISO_Left_Tab
 
 #switch workspaces
 KEY_1 p : wmctrl -s 0
@@ -11,19 +12,19 @@ KEY_4 p : wmctrl -s 3
 KEY_5 p : wmctrl -s 4
 
 #move windows across workspaces
-KEY_1 h : wmctrl -t 0 -r :ACTIVE:
-KEY_2 h : wmctrl -t 1 -r :ACTIVE:
-KEY_3 h : wmctrl -t 2 -r :ACTIVE:
-KEY_4 h : wmctrl -t 3 -r :ACTIVE:
-KEY_5 h : wmctrl -t 4 -r :ACTIVE:
+KEY_6 p : wmctrl -t 0 -r :ACTIVE:
+KEY_7 p : wmctrl -t 1 -r :ACTIVE:
+KEY_8 p : wmctrl -t 2 -r :ACTIVE:
+KEY_9 p : wmctrl -t 3 -r :ACTIVE:
+KEY_0 p : wmctrl -t 4 -r :ACTIVE:
 
 #tile windows in a 2x2 grid
 KEY_Q p : wmctrl -r :ACTIVE: -e 0,0,18,956,527
 KEY_W p : wmctrl -r :ACTIVE: -e 0,0,18,1916,527
 KEY_E p : wmctrl -r :ACTIVE: -e 0,960,18,956,527
-KEY_A p : wmctrl -r :ACTIVE: -e 0,0,18,956,1057
-KEY_S p : wmctrl -r :ACTIVE: -e 0,0,18,1916,1057
-KEY_D p : wmctrl -r :ACTIVE: -e 0,960,18,956,1057
+KEY_A p : wmctrl -r :ACTIVE: -e 0,0,18,956,1058
+KEY_S p : wmctrl -r :ACTIVE: -e 0,0,18,1916,1058
+KEY_D p : wmctrl -r :ACTIVE: -e 0,960,18,956,1058
 KEY_Z p : wmctrl -r :ACTIVE: -e 0,0,549,956,527
 KEY_X p : wmctrl -r :ACTIVE: -e 0,0,549,1916,527
 KEY_C p : wmctrl -r :ACTIVE: -e 0,960,549,956,527
@@ -32,9 +33,9 @@ KEY_C p : wmctrl -r :ACTIVE: -e 0,960,549,956,527
 KEY_Q h : wmctrl -r :ACTIVE: -e 0,0,18,636,527
 KEY_W h : wmctrl -r :ACTIVE: -e 0,640,18,636,527
 KEY_E h : wmctrl -r :ACTIVE: -e 0,1280,18,636,527
-KEY_A h : wmctrl -r :ACTIVE: -e 0,0,18,636,1057
-KEY_S h : wmctrl -r :ACTIVE: -e 0,640,18,636,1057
-KEY_D h : wmctrl -r :ACTIVE: -e 0,1280,18,636,1057
+KEY_A h : wmctrl -r :ACTIVE: -e 0,0,18,636,1058
+KEY_S h : wmctrl -r :ACTIVE: -e 0,640,18,636,1058
+KEY_D h : wmctrl -r :ACTIVE: -e 0,1280,18,636,1058
 KEY_Z h : wmctrl -r :ACTIVE: -e 0,0,549,636,527
 KEY_X h : wmctrl -r :ACTIVE: -e 0,640,549,636,527
 KEY_C h : wmctrl -r :ACTIVE: -e 0,1280,549,636,527
@@ -68,24 +69,32 @@ KEY_END h : pactl set-sink-volume @DEFAULT_SINK@ -10%
 KEY_PAGEDOWN p : pactl set-sink-volume @DEFAULT_SINK@ +2%
 KEY_PAGEDOWN h : pactl set-sink-volume @DEFAULT_SINK@ +10%
 
+#dunst
+KEY_RIGHTSHIFT p : xdotool key XF86Mail
+KEY_COMPOSE p : xdotool key XF86Search
+KEY_RIGHTCTRL p : xdotool key XF86HomePage
+
 #discord shortcuts
-KEY_LEFT p : xdotool key ctrl+alt+shift+F1
-KEY_DOWN p : xdotool key ctrl+alt+shift+F2
-KEY_RIGHT p : xdotool key ctrl+alt+shift+F3
+KEY_LEFT p : xdotool key XF86AudioPlay
+KEY_DOWN p : xdotool key XF86AudioPrev
+KEY_RIGHT p : xdotool key XF86AudioNext
 KEY_UP p : discord &
 KEY_UP h : ripcord &
 
 #miscelaous
-KEY_ESC p : xflock4 &
-KEY_BACKSPACE p : xdotool key Super_R+BackSpace
+KEY_ESC p : xflock4
+KEY_BACKSPACE p : wmctrl -c :ACTIVE:
 KEY_BACKSPACE h : xdotool getwindowfocus windowkill
+KEY_SPACE p : scrot Pictures/screenshots/'%Y-%m-%d %H:%M:%S.png'
+KEY_SPACE h : xfce4-screenshooter -rc &
+KEY_BACKSLASH p : dmenu_run -i -f -nf '#FFFFFF' -fn 'Cantarell-9'
 
 KEY_ENTER p : alacritty &
 KEY_G p : gcolor2 &
 KEY_G h : gimp &
 KEY_Y p : freetube &
 KEY_B p : falkon &
-KEY_B h : chromium &
+KEY_B h : bitwarden &
 
 KEY_V p : veracrypt &
 KEY_T p : thunar &

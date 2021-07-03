@@ -20,3 +20,4 @@ falkon &
 
 xmodmap -e 'keycode 135 = Super_R'
 xmodmap -e 'keycode 91 = Delete period period Delete'
+pulseaudio-equalizer enable
