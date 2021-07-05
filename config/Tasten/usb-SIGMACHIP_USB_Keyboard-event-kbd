@@ -1,8 +1,6 @@
 #above fullscreen and cycle
 KEY_R p : wmctrl -r :ACTIVE: -b toggle,above
 KEY_F p : wmctrl -r :ACTIVE: -b toggle,fullscreen
-KEY_TAB p : xdotool key shift+ctrl+ISO_Left_Tab
-KEY_TAB h : xdotool key shift+ctrl+ISO_Left_Tab
 
 #switch workspaces
 KEY_1 p : wmctrl -s 0
@@ -19,26 +17,26 @@ KEY_9 p : wmctrl -t 3 -r :ACTIVE:
 KEY_0 p : wmctrl -t 4 -r :ACTIVE:
 
 #tile windows in a 2x2 grid
-KEY_Q p : wmctrl -r :ACTIVE: -e 0,0,18,956,527
-KEY_W p : wmctrl -r :ACTIVE: -e 0,0,18,1916,527
-KEY_E p : wmctrl -r :ACTIVE: -e 0,960,18,956,527
-KEY_A p : wmctrl -r :ACTIVE: -e 0,0,18,956,1058
-KEY_S p : wmctrl -r :ACTIVE: -e 0,0,18,1916,1058
-KEY_D p : wmctrl -r :ACTIVE: -e 0,960,18,956,1058
-KEY_Z p : wmctrl -r :ACTIVE: -e 0,0,549,956,527
-KEY_X p : wmctrl -r :ACTIVE: -e 0,0,549,1916,527
-KEY_C p : wmctrl -r :ACTIVE: -e 0,960,549,956,527
+KEY_Q p : wmctrl -r :ACTIVE: -e 0,0,18,958,529
+KEY_W p : wmctrl -r :ACTIVE: -e 0,0,18,1918,529
+KEY_E p : wmctrl -r :ACTIVE: -e 0,960,18,958,529
+KEY_A p : wmctrl -r :ACTIVE: -e 0,0,18,958,1060
+KEY_S p : wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
+KEY_D p : wmctrl -r :ACTIVE: -e 0,960,18,958,1060
+KEY_Z p : wmctrl -r :ACTIVE: -e 0,0,549,958,529
+KEY_X p : wmctrl -r :ACTIVE: -e 0,0,549,1918,529
+KEY_C p : wmctrl -r :ACTIVE: -e 0,960,549,958,529
 
 #tile windows in a 3x2 grid
-KEY_Q h : wmctrl -r :ACTIVE: -e 0,0,18,636,527
-KEY_W h : wmctrl -r :ACTIVE: -e 0,640,18,636,527
-KEY_E h : wmctrl -r :ACTIVE: -e 0,1280,18,636,527
-KEY_A h : wmctrl -r :ACTIVE: -e 0,0,18,636,1058
-KEY_S h : wmctrl -r :ACTIVE: -e 0,640,18,636,1058
-KEY_D h : wmctrl -r :ACTIVE: -e 0,1280,18,636,1058
-KEY_Z h : wmctrl -r :ACTIVE: -e 0,0,549,636,527
-KEY_X h : wmctrl -r :ACTIVE: -e 0,640,549,636,527
-KEY_C h : wmctrl -r :ACTIVE: -e 0,1280,549,636,527
+KEY_Q h : wmctrl -r :ACTIVE: -e 0,0,18,638,529
+KEY_W h : wmctrl -r :ACTIVE: -e 0,640,18,638,529
+KEY_E h : wmctrl -r :ACTIVE: -e 0,1280,18,638,529
+KEY_A h : wmctrl -r :ACTIVE: -e 0,0,18,638,1060
+KEY_S h : wmctrl -r :ACTIVE: -e 0,640,18,638,1060
+KEY_D h : wmctrl -r :ACTIVE: -e 0,1280,18,638,1060
+KEY_Z h : wmctrl -r :ACTIVE: -e 0,0,549,638,529
+KEY_X h : wmctrl -r :ACTIVE: -e 0,640,549,638,529
+KEY_C h : wmctrl -r :ACTIVE: -e 0,1280,549,638,529
 
 #audacious
 KEY_KPENTER p : audtool current-song | xargs --null notify-send -t 3000
@@ -69,6 +67,9 @@ KEY_END h : pactl set-sink-volume @DEFAULT_SINK@ -10%
 KEY_PAGEDOWN p : pactl set-sink-volume @DEFAULT_SINK@ +2%
 KEY_PAGEDOWN h : pactl set-sink-volume @DEFAULT_SINK@ +10%
 
+KEY_P p : patchage &
+KEY_P h : pavucontrol &
+
 #dunst
 KEY_RIGHTSHIFT p : xdotool key XF86Mail
 KEY_COMPOSE p : xdotool key XF86Search
@@ -82,7 +83,7 @@ KEY_UP p : discord &
 KEY_UP h : ripcord &
 
 #miscelaous
-KEY_ESC p : xflock4
+KEY_ESC p : slock &
 KEY_BACKSPACE p : wmctrl -c :ACTIVE:
 KEY_BACKSPACE h : xdotool getwindowfocus windowkill
 KEY_SPACE p : scrot Pictures/screenshots/'%Y-%m-%d %H:%M:%S.png'

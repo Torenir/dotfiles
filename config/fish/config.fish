@@ -23,5 +23,5 @@ alias steam='steam -silent'
 echo; neofetch
 
 if [ (tty) = '/dev/tty1' ]
-	startx $HOME/.config/xinitrc
+	sx sh $HOME/.config/xinitrc
 end

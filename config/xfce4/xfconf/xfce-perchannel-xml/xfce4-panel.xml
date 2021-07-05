@@ -11,8 +11,6 @@
       <property name="icon-size" type="uint" value="16"/>
       <property name="size" type="uint" value="17"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="41"/>
-        <value type="int" value="1"/>
         <value type="int" value="24"/>
         <value type="int" value="7"/>
         <value type="int" value="23"/>
@@ -63,13 +61,6 @@
     <property name="dark-mode" type="bool" value="false"/>
   </property>
   <property name="plugins" type="empty">
-    <property name="plugin-1" type="string" value="applicationsmenu">
-      <property name="show-button-title" type="bool" value="false"/>
-      <property name="show-generic-names" type="bool" value="false"/>
-      <property name="show-menu-icons" type="bool" value="true"/>
-      <property name="show-tooltips" type="bool" value="false"/>
-      <property name="button-icon" type="string" value="archlinux-logo"/>
-    </property>
     <property name="plugin-3" type="string" value="separator">
       <property name="expand" type="bool" value="true"/>
       <property name="style" type="uint" value="0"/>
@@ -195,6 +186,5 @@
     <property name="plugin-40" type="string" value="separator">
       <property name="style" type="uint" value="0"/>
     </property>
-    <property name="plugin-41" type="string" value="separator"/>
   </property>
 </channel>
