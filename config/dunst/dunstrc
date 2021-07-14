@@ -139,7 +139,7 @@
     # Show age of message if message is older than show_age_threshold
     # seconds.
     # Set to -1 to disable.
-    show_age_threshold = 5
+    show_age_threshold = -1
 
     # Split notifications into multiple lines if they don't fit into
     # geometry.
@@ -275,19 +275,19 @@
     # Xev might be helpful to find names for keys.
 
     # Close notification.
-    close = XF86HomePage
+    close = ctrl+shift+XF86HomePage
 
     # Close all notifications.
-    close_all = XF86Mail
+    close_all = ctrl+shift+XF86Mail
 
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1". Make sure this key actually exists on your keyboard layout,
     # e.g. check output of 'xmodmap -pke'
-    history = XF86Search
+    history = ctrl+shift+XF86Search
 
     # Context menu.
-    context = ctrl+shift+period
+    # context = ctrl+shift+period
 
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.

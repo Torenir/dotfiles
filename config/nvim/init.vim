@@ -18,9 +18,9 @@ set ignorecase
 set mouse=a
 set clipboard+=unnamedplus "use clipboard
 
-"use tabs 4 characters long
-set tabstop=4
-set shiftwidth=4
+"use tabs 6 characters long
+set tabstop=6
+set shiftwidth=6
 set noexpandtab
 %retab!
 
