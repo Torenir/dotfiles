@@ -16,27 +16,18 @@ KEY_9 h : wmctrl -t 2 -r :ACTIVE:
 KEY_8 h : wmctrl -t 3 -r :ACTIVE:
 KEY_7 h : wmctrl -t 4 -r :ACTIVE:
 
-#tile windows in a 2x2 grid
-KEY_LEFTBRACE p : wmctrl -r :ACTIVE: -e 0,0,18,958,529
-KEY_APOSTROPHE p : wmctrl -r :ACTIVE: -e 0,0,18,1918,529
-KEY_SLASH p : wmctrl -r :ACTIVE: -e 0,960,18,958,529
-KEY_P p : wmctrl -r :ACTIVE: -e 0,0,18,958,1060
-KEY_SEMICOLON p : wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
-KEY_DOT p : wmctrl -r :ACTIVE: -e 0,960,18,958,1060
-KEY_O p : wmctrl -r :ACTIVE: -e 0,0,549,958,529
-KEY_L p : wmctrl -r :ACTIVE: -e 0,0,549,1918,529
-KEY_COMMA p : wmctrl -r :ACTIVE: -e 0,960,549,958,529
+#tile windows
+KEY_LEFTBRACE p : quicktile top-left
+KEY_APOSTROPHE p : quicktile top
+KEY_SLASH p : quicktile top-right
+KEY_P p : quicktile left
+KEY_SEMICOLON p : quicktile center
+KEY_DOT p : quicktile right
+KEY_O p : quicktile bottom-left
+KEY_L p : quicktile bottom
+KEY_COMMA p : quicktile bottom-right
 
-#tile windows in a 3x2 grid
-KEY_LEFTBRACE h : wmctrl -r :ACTIVE: -e 0,0,18,638,529
-KEY_APOSTROPHE h : wmctrl -r :ACTIVE: -e 0,640,18,638,529
-KEY_SLASH h : wmctrl -r :ACTIVE: -e 0,1280,18,638,529
-KEY_P h : wmctrl -r :ACTIVE: -e 0,0,18,638,1060
-KEY_SEMICOLON h : wmctrl -r :ACTIVE: -e 0,640,18,638,1060
-KEY_DOT h : wmctrl -r :ACTIVE: -e 0,1280,18,638,1060
-KEY_O h : wmctrl -r :ACTIVE: -e 0,0,549,638,529
-KEY_L h : wmctrl -r :ACTIVE: -e 0,640,549,638,529
-KEY_COMMA h : wmctrl -r :ACTIVE: -e 0,1280,549,638,529
+KEY_SEMICOLON h : wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
 
 #audacious
 KEY_LEFTALT p : audtool current-song | xargs --null notify-send -t 3000
@@ -67,8 +58,8 @@ KEY_5 h : pactl set-sink-volume @DEFAULT_SINK@ -10%
 KEY_6 p : pactl set-sink-volume @DEFAULT_SINK@ +2%
 KEY_6 h : pactl set-sink-volume @DEFAULT_SINK@ +10%
 
-KEY_W p : patchage &
-KEY_W h : pavucontrol &
+KEY_W h : patchage &
+KEY_W p : pavucontrol &
 
 #dunst
 KEY_RIGHTSHIFT p : xdotool key ctrl+shift+XF86Mail
@@ -86,8 +77,8 @@ KEY_UP h : ripcord &
 KEY_ESC p : slock &
 KEY_BACKSPACE p : wmctrl -c :ACTIVE:
 KEY_BACKSPACE h : xdotool getwindowfocus windowkill
-KEY_SPACE p : scrot Pictures/screenshots/'%Y-%m-%d %H:%M:%S.png'
-KEY_SPACE h : xfce4-screenshooter -rc &
+KEY_SPACE p : flameshot full -p ~/Pictures/screenshots/
+KEY_SPACE h : flameshot gui &
 
 KEY_ENTER p : alacritty &
 KEY_G p : gcolor2 &

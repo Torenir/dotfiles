@@ -1,13 +1,16 @@
 nitrogen --restore &
 xfce4-panel &
-audacious -H &
-xrdb -merge ~/.config/xresources &
+xrdb -merge ~/.config/Xresources &
 dunst &
 unclutter --timeout 2 --jitter 4 &
+flameshot &
+audacious -H &
 
 Tasten &
 sleep 1.2
 sudo Tasten-client -d usb-SIGMACHIP_USB_Keyboard-event-kbd &
 
+setxkbmap pl
+xset r rate 222 30
 xmodmap -e 'keycode 135 = Super_R'
-xmodmap -e 'keycode 91 = Delete period period Delete'
+xmodmap -e 'keycode 91 = period period'

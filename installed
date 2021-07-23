@@ -1,6 +1,5 @@
 alacritty
 amd-ucode
-arc-gtk-theme
 audacious
 autoconf
 automake
@@ -8,6 +7,7 @@ base
 binutils
 bison
 bitwarden-bin
+bitwarden-cli
 btrfs-progs
 capitaine-cursors
 click4ever
@@ -19,6 +19,7 @@ exo
 fakeroot
 falkon
 fish
+flameshot
 flex
 freetube-bin
 garcon
@@ -36,6 +37,7 @@ hunspell-en_gb
 hunspell-pl
 jdk-openjdk
 jdk8-openjdk
+jq
 libreoffice-still
 libtool
 links
@@ -55,10 +57,12 @@ neovim
 neovim-symlinks
 newsboat
 nitrogen
+nordic-theme-git
 ntfs-3g
 obconf
 obs-studio
 openbox
+openbox-arc-git
 otf-hermit
 pamixer
 papirus-icon-theme
@@ -78,10 +82,10 @@ python-pyglet
 python-requests
 qpdfview
 qt5-styleplugins
+quicktile-git
 radeontop
 ripcord
 rsync
-scrot
 session-desktop-bin
 shotcut
 slock
@@ -94,6 +98,7 @@ sx
 sxiv
 texinfo
 thunar
+thunar-archive-plugin
 tldr
 tmux
 transmission-gtk
@@ -104,6 +109,7 @@ veracrypt
 virtualbox
 which
 wmctrl
+xarchiver
 xclip
 xdotool
 xf86-video-ati
@@ -112,7 +118,6 @@ xfce4-fsguard-plugin
 xfce4-genmon-plugin
 xfce4-netload-plugin
 xfce4-panel
-xfce4-screenshooter
 xfce4-timer-plugin
 xfconf
 xorg-bdftopcf
@@ -162,6 +167,7 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+yad
 yay
 youtube-dl
 zip

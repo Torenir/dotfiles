@@ -5,7 +5,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'cocopon/iceberg.vim'
 Plug 'arcticicestudio/nord-vim'
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline'
 Plug 'ervandew/supertab'
 Plug 'vim-python/python-syntax'
 
@@ -13,6 +13,7 @@ call plug#end()
 
 let g:python_recommended_style=0 "ignore style for python
 let g:python_highlight_all=1 "python-syntax highlight
+let g:airline_powerline_fonts = 1
 
 set ignorecase
 set mouse=a
