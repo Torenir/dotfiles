@@ -1,75 +1,75 @@
 #above fullscreen and cycle
-KEY_RIGHTMETA p : wmctrl -r :ACTIVE: -b toggle,above
-KEY_RIGHTALT p : wmctrl -r :ACTIVE: -b toggle,fullscreen
+KEY_KPPLUS p : wmctrl -r :ACTIVE: -b toggle,above
+KEY_KPENTER p : wmctrl -r :ACTIVE: -b toggle,fullscreen
 
 #switch workspaces
-KEY_MINUS p : wmctrl -s 0
-KEY_0 p : wmctrl -s 1
-KEY_9 p : wmctrl -s 2
-KEY_8 p : wmctrl -s 3
-KEY_7 p : wmctrl -s 4
+KEY_N p : wmctrl -s 0
+KEY_M p : wmctrl -s 1
+KEY_COMMA p : wmctrl -s 2
+KEY_DOT p : wmctrl -s 3
+KEY_SLASH p : wmctrl -s 4
 
 #move windows across workspaces
-KEY_MINUS h : wmctrl -t 0 -r :ACTIVE:
-KEY_0 h : wmctrl -t 1 -r :ACTIVE:
-KEY_9 h : wmctrl -t 2 -r :ACTIVE:
-KEY_8 h : wmctrl -t 3 -r :ACTIVE:
-KEY_7 h : wmctrl -t 4 -r :ACTIVE:
+KEY_N h : wmctrl -t 0 -r :ACTIVE:
+KEY_M h : wmctrl -t 1 -r :ACTIVE:
+KEY_COMMA h : wmctrl -t 2 -r :ACTIVE:
+KEY_DOT h : wmctrl -t 3 -r :ACTIVE:
+KEY_SLASH h : wmctrl -t 4 -r :ACTIVE:
 
 #tile windows
-KEY_LEFTBRACE p : quicktile top-left
-KEY_APOSTROPHE p : quicktile top
-KEY_SLASH p : quicktile top-right
-KEY_P p : quicktile left
-KEY_SEMICOLON p : quicktile center
-KEY_DOT p : quicktile right
-KEY_O p : quicktile bottom-left
-KEY_L p : quicktile bottom
-KEY_COMMA p : quicktile bottom-right
+KEY_KP7 p : quicktile top-left
+KEY_KP8 p : quicktile top
+KEY_KP9 p : quicktile top-right
+KEY_KP4 p : quicktile left
+KEY_KP5 p : quicktile center
+KEY_KP6 p : quicktile right
+KEY_KP1 p : quicktile bottom-left
+KEY_KP2 p : quicktile bottom
+KEY_KP3 p : quicktile bottom-right
 
-KEY_SEMICOLON h : wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
+KEY_KP5 h : wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
 
 #audacious
-KEY_LEFTALT p : audtool current-song | xargs --null notify-send -t 3000
-KEY_LEFTALT h : audtool current-playlist-name | xargs notify-send -t 2000
+KEY_LEFTCTRL p : audtool current-song | xargs --null notify-send -t 3000
+KEY_LEFTMETA p : audtool current-playlist-name | xargs notify-send -t 2000
 KEY_LEFTSHIFT p : audtool playback-playpause
 KEY_LEFTSHIFT h : audtool playback-seek 0
-KEY_LEFTMETA p : audtool set-volume +2%
-KEY_LEFTCTRL p : audtool set-volume -2%
-KEY_LEFTMETA h : audtool set-volume +6%
-KEY_LEFTCTRL h : audtool set-volume -6%
-KEY_TAB p : audtool playback-seek-relative -10
-KEY_CAPSLOCK p : audtool playback-seek-relative 10
-KEY_TAB h : audtool playlist-reverse
-KEY_CAPSLOCK h : audtool playlist-advance
-KEY_Q p : audtool set-current-playlist 1
-KEY_A p : audtool set-current-playlist 2
-KEY_Z p : audtool set-current-playlist 3
+KEY_TAB p : audtool set-volume +2%
+KEY_CAPSLOCK p : audtool set-volume -2%
+KEY_TAB h : audtool set-volume +10%
+KEY_CAPSLOCK h : audtool set-volume -10%
+KEY_A p : audtool playback-seek-relative -10
+KEY_S p : audtool playback-seek-relative 10
+KEY_Z p : audtool playlist-reverse
+KEY_X p : audtool playlist-advance
+KEY_1 p : audtool set-current-playlist 1
+KEY_2 p : audtool set-current-playlist 2
+KEY_3 p : audtool set-current-playlist 3
 
 #pulseaudio
-KEY_1 p : pactl set-source-mute @DEFAULT_SOURCE@ toggle
-KEY_2 p : pactl set-source-volume @DEFAULT_SOURCE@ -2%
-KEY_2 h : pactl set-source-volume @DEFAULT_SOURCE@ -10%
-KEY_3 p : pactl set-source-volume @DEFAULT_SOURCE@ +2%
-KEY_3 h : pactl set-source-volume @DEFAULT_SOURCE@ +10%
-KEY_4 p : pactl set-sink-mute @DEFAULT_SINK@ toggle
-KEY_5 p : pactl set-sink-volume @DEFAULT_SINK@ -2%
-KEY_5 h : pactl set-sink-volume @DEFAULT_SINK@ -10%
-KEY_6 p : pactl set-sink-volume @DEFAULT_SINK@ +2%
-KEY_6 h : pactl set-sink-volume @DEFAULT_SINK@ +10%
+KEY_INSERT p : pactl set-source-mute @DEFAULT_SOURCE@ toggle
+KEY_HOME p : pactl set-source-volume @DEFAULT_SOURCE@ -2%
+KEY_HOME h : pactl set-source-volume @DEFAULT_SOURCE@ -10%
+KEY_PAGEUP p : pactl set-source-volume @DEFAULT_SOURCE@ +2%
+KEY_PAGEUP h : pactl set-source-volume @DEFAULT_SOURCE@ +10%
+KEY_DELETE p : pactl set-sink-mute @DEFAULT_SINK@ toggle
+KEY_END p : pactl set-sink-volume @DEFAULT_SINK@ -2%
+KEY_END h : pactl set-sink-volume @DEFAULT_SINK@ -10%
+KEY_PAGEDOWN p : pactl set-sink-volume @DEFAULT_SINK@ +2%
+KEY_PAGEDOWN h : pactl set-sink-volume @DEFAULT_SINK@ +10%
 
-KEY_W h : patchage &
-KEY_W p : pavucontrol &
+KEY_NUMLOCK h : patchage &
+KEY_NUMLOCK p : pavucontrol &
 
 #dunst
-KEY_RIGHTSHIFT p : xdotool key ctrl+shift+XF86Mail
-KEY_COMPOSE p : xdotool key ctrl+shift+XF86Search
-KEY_RIGHTCTRL p : xdotool key ctrl+shift+XF86HomePage
+KEY_RIGHTSHIFT p : xdotool key XF86Bluetooth
+KEY_COMPOSE p : xdotool key XF86Battery
+KEY_RIGHTCTRL p : xdotool key XF86Documents
 
 #discord shortcuts
-KEY_LEFT p : xdotool key shift+XF86HomePage
-KEY_DOWN p : xdotool key shift+XF86Mail
-KEY_RIGHT p : xdotool key shift+XF86Messenger
+KEY_LEFT p : xdotool key XF86WLAN
+KEY_DOWN p : xdotool key XF86UWB
+KEY_RIGHT p : xdotool key XF86WWAN
 KEY_UP p : discord &
 KEY_UP h : ripcord &
 

@@ -64,7 +64,7 @@
     frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#2D3036"
+    frame_color = "#8FBCBB"
 
     # Define a color for the separator.
     # possible values are:
@@ -184,7 +184,7 @@
     sticky_history = yes
 
     # Maximum amount of notifications kept in history
-    history_length = 30
+    history_length = 24
 
     ### Misc/Advanced ###
 
@@ -275,16 +275,16 @@
     # Xev might be helpful to find names for keys.
 
     # Close notification.
-    close = ctrl+shift+XF86HomePage
+    close = XF86Documents
 
     # Close all notifications.
-    close_all = ctrl+shift+XF86Mail
+    close_all = XF86Bluetooth
 
     # Redisplay last message(s).
     # On the US keyboard layout "grave" is normally above TAB and left
     # of "1". Make sure this key actually exists on your keyboard layout,
     # e.g. check output of 'xmodmap -pke'
-    history = ctrl+shift+XF86Search
+    history = XF86Battery
 
     # Context menu.
     # context = ctrl+shift+period

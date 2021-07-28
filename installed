@@ -40,6 +40,7 @@ jdk8-openjdk
 jq
 libreoffice-still
 libtool
+libva-mesa-driver
 links
 linux-firmware
 linux-zen
@@ -61,6 +62,7 @@ nordic-theme-git
 ntfs-3g
 obconf
 obs-studio
+olive
 openbox
 openbox-arc-git
 otf-hermit
@@ -87,7 +89,6 @@ radeontop
 ripcord
 rsync
 session-desktop-bin
-shotcut
 slock
 smartmontools
 speedcrunch
@@ -113,12 +114,10 @@ xarchiver
 xclip
 xdotool
 xf86-video-ati
-xfce4-clipman-plugin
 xfce4-fsguard-plugin
 xfce4-genmon-plugin
 xfce4-netload-plugin
 xfce4-panel
-xfce4-timer-plugin
 xfconf
 xorg-bdftopcf
 xorg-docs
