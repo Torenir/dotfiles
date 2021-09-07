@@ -1,6 +1,6 @@
 Command=pamixer --source @DEFAULT_SOURCE@ --get-volume-human
 UseLabel=1
-Text=\ \ \ microphone:\ 
+Text=\ \ \ mic:\ 
 UpdatePeriod=1250
 Font=Cantarell 9
 

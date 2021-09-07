@@ -1,3 +1,5 @@
+KEY_KPMINUS p : setxkbmap pl; xset r rate 222 30; xmodmap -e 'keycode 135 = Super_R'; xmodmap -e 'keycode 91 = period period'
+
 #above fullscreen and cycle
 KEY_KPPLUS p : wmctrl -r :ACTIVE: -b toggle,above
 KEY_KPENTER p : wmctrl -r :ACTIVE: -b toggle,fullscreen
@@ -70,11 +72,11 @@ KEY_RIGHTCTRL p : xdotool key XF86Documents
 KEY_LEFT p : xdotool key XF86WLAN
 KEY_DOWN p : xdotool key XF86UWB
 KEY_RIGHT p : xdotool key XF86WWAN
-KEY_UP p : discord &
+KEY_UP p : ferdi &
 KEY_UP h : ripcord &
 
 #miscelaous
-KEY_ESC p : slock &
+KEY_ESC p : slock
 KEY_BACKSPACE p : wmctrl -c :ACTIVE:
 KEY_BACKSPACE h : xdotool getwindowfocus windowkill
 KEY_SPACE p : flameshot full -p ~/Pictures/screenshots/

@@ -21,7 +21,7 @@
   <theme>
     <name>Arc-Dark</name>
     <titleLayout/>
-    <keepBorder>yes</keepBorder>
+    <keepBorder>no</keepBorder>
     <animateIconify>no</animateIconify>
     <font place="ActiveWindow">
       <name>Cantarell</name>
@@ -100,16 +100,16 @@
         <command>alacritty</command>
       </action>
     </keybind>
-    <keybind key="C-ISO_Left_Tab">
+    <keybind key="A-grave">
       <action name="Move"/>
     </keybind>
-    <keybind key="C-S-ISO_Left_Tab">
+    <keybind key="A-S-grave">
       <action name="Resize">
         <edge>bottomright</edge>
       </action>
     </keybind>
     <keybind key="A-ISO_Left_Tab">
-      <action name="PreviousWindow"/>
+      <action name="NextWindow"/>
     </keybind>
     <keybind key="W-BackSpace">
       <action name="Close"/>
@@ -118,7 +118,7 @@
   <mouse>
     <dragThreshold>1</dragThreshold>
     <doubleClickTime>500</doubleClickTime>
-    <screenEdgeWarpTime>400</screenEdgeWarpTime>
+    <screenEdgeWarpTime>0</screenEdgeWarpTime>
     <screenEdgeWarpMouse>false</screenEdgeWarpMouse>
     <context name="Titlebar">
       <mousebind button="Left" action="DoubleClick"/>
@@ -137,7 +137,7 @@
   </margins>
   <resize>
     <drawContents>yes</drawContents>
-    <popupShow>NonPixel</popupShow>
+    <popupShow>Never</popupShow>
     <popupPosition>Center</popupPosition>
     <popupFixedPosition>
       <x>0</x>

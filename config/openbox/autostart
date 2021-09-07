@@ -3,14 +3,12 @@ xfce4-panel &
 xrdb -merge ~/.config/Xresources &
 dunst &
 unclutter --timeout 2 --jitter 4 &
-flameshot &
 audacious -H &
-
+flameshot &
 Tasten &
-sleep 1.2
-sudo Tasten-client -d usb-SIGMACHIP_USB_Keyboard-event-kbd &
-
-setxkbmap pl
 xset r rate 222 30
 xmodmap -e 'keycode 135 = Super_R'
 xmodmap -e 'keycode 91 = period period'
+yad --title 'Password' --entry --hide-text | sudo -S Tasten-client -d usb-SIGMACHIP_USB_Keyboard-event-kbd &
+sleep 1
+dbus-launch kdeconnect-indicator &

@@ -19,6 +19,7 @@ alias gitc='git commit -m'
 
 alias yt-mp3='youtube-dl --add-header 'Cookie:' --extract-audio --audio-format mp3'
 alias steam='steam -silent'
+alias sus='systemctl suspend'
 
 echo; neofetch
 
