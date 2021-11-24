@@ -1,0 +1,6 @@
+Command=pamixer --get-volume-human --sink @DEFAULT_SINK@
+UseLabel=1
+Text=\ \ \ 
+UpdatePeriod=1750
+Font=Cantarell 9
+

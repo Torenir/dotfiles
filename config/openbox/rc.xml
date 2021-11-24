@@ -78,7 +78,7 @@
     </font>
   </theme>
   <desktops>
-    <number>5</number>
+    <number>6</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
@@ -86,20 +86,11 @@
       <name>3</name>
       <name>4</name>
       <name>5</name>
+      <name>6</name>
     </names>
     <popupTime>0</popupTime>
   </desktops>
   <keyboard>
-    <keybind key="XF86Reload">
-      <action name="Execute">
-        <command>dmenu_run -i -f -nf '#FFFFFF' -fn 'Cantarell-9'</command>
-      </action>
-    </keybind>
-    <keybind key="W-Return">
-      <action name="Execute">
-        <command>alacritty</command>
-      </action>
-    </keybind>
     <keybind key="A-grave">
       <action name="Move"/>
     </keybind>
@@ -110,9 +101,6 @@
     </keybind>
     <keybind key="A-ISO_Left_Tab">
       <action name="NextWindow"/>
-    </keybind>
-    <keybind key="W-BackSpace">
-      <action name="Close"/>
     </keybind>
   </keyboard>
   <mouse>

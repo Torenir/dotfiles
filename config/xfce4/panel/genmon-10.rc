@@ -1,0 +1,6 @@
+Command=audtool current-song
+UseLabel=1
+Text=\ \ 
+UpdatePeriod=250
+Font=Cantarell 9
+

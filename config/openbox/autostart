@@ -2,13 +2,23 @@ nitrogen --restore &
 xfce4-panel &
 xrdb -merge ~/.config/Xresources &
 dunst &
+systembus-notify &
 unclutter --timeout 2 --jitter 4 &
-audacious -H &
 flameshot &
-Tasten &
-xset r rate 222 30
-xmodmap -e 'keycode 135 = Super_R'
-xmodmap -e 'keycode 91 = period period'
-yad --title 'Password' --entry --hide-text | sudo -S Tasten-client -d usb-SIGMACHIP_USB_Keyboard-event-kbd &
-sleep 1
+sxhkd &
+transmission-daemon --port 9091 --allowed "127.0.0.1" &
+sleep 4
+audacious -H &
+qjackctl &
+pactl load-module module-remap-sink sink_name=mono-sink &
+pactl load-module module-remap-sink sink_name=mic-monitor &
 dbus-launch kdeconnect-indicator &
+
+setxkbmap -layout pl
+xset r rate 222 30
+xmodmap -e "clear mod4"
+xmodmap -e "add mod4 = Super_L"
+xmodmap -e "clear mod3"
+xmodmap -e "keycode 135 = Super_R"
+xmodmap -e "add mod3 = Super_R"
+xmodmap -e "keycode 91 = period period"
