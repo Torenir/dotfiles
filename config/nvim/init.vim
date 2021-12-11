@@ -9,7 +9,7 @@ Plug 'arcticicestudio/nord-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
-Plug 'ervandew/supertab'
+"Plug 'ervandew/supertab'
 Plug 'vim-python/python-syntax'
 
 Plug 'neomake/neomake'
@@ -25,9 +25,9 @@ set ignorecase
 set mouse=a
 set clipboard+=unnamedplus
 
-"use tabs 6 characters long
-set tabstop=6
-set shiftwidth=6
+"use tabs 8 characters long
+set tabstop=8
+set shiftwidth=8
 set noexpandtab
 %retab!
 

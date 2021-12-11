@@ -1,6 +1,6 @@
 set fish_greeting #remove fish greeting at the start
 
-export QT_QPA_PLATFORMTHEME=gtk2 #render qt using gtk themes
+export QT_QPA_PLATFORMTHEME=qt5ct
 #force use of gtk3-nocsd
 export GTK_CSD=0
 export LD_PRELOAD=/usr/lib/libgtk3-nocsd.so.0

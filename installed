@@ -2,11 +2,9 @@ amd-ucode
 android-file-transfer
 audacious
 audacity
-autoconf
 automake
 base
 binutils
-bison
 bitwarden-cli
 boost
 brave-bin
@@ -23,7 +21,6 @@ dwarffortress
 earlyoom
 emby-server
 exo
-fabric-server
 fakeroot
 fish
 flameshot
@@ -47,6 +44,7 @@ jdk8-openjdk
 jq
 kdeconnect
 kitty
+kvantum-qt5
 lazygit
 libappimage
 libreoffice-still
@@ -65,6 +63,7 @@ man-db
 man-pages
 mediainfo
 minecraft-launcher
+minutor-git
 mlocate
 mpv
 multimc5
@@ -83,6 +82,7 @@ openbox
 openbox-arc-git
 otf-hermit
 pamixer
+papermc
 papirus-icon-theme
 parted
 patch
@@ -90,20 +90,21 @@ pipewire-alsa
 pipewire-jack-dropin
 pipewire-pulse
 preload
-progress
 pulsemixer
+pv
 python-beautifulsoup4
 python-discord
 python-evdev
 python-pyglet
 python-requests
 qjackctl
-qt5-styleplugins
+qt5ct-kde
 quicktile-git
 radeontop
 rclone
 ripcord
 scrypt
+signal-desktop
 slock
 smartmontools
 steam
@@ -123,6 +124,7 @@ unclutter
 unzip
 veracrypt
 virtualbox
+wget
 which
 wmctrl
 wol-systemd
