@@ -1,5 +1,7 @@
 nitrogen --restore &
-xfce4-panel &
+picom -C -r 0 -o 0 -C -i 1 -m 1 -D 5 -b
+tint2 -c $HOME/.config/tint2/tint2rc1 &
+tint2 -c $HOME/.config/tint2/tint2rc2 &
 xrdb -merge ~/.config/Xresources &
 dunst &
 systembus-notify &
@@ -8,8 +10,6 @@ flameshot &
 sxhkd &
 transmission-daemon --port 9091 --allowed "127.0.0.1" &
 sleep 4
-audacious -H &
-qjackctl &
 pactl load-module module-remap-sink sink_name=mono-sink &
 pactl load-module module-remap-sink sink_name=mic-monitor &
 dbus-launch kdeconnect-indicator &

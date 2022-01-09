@@ -1,6 +1,0 @@
-Command=audtool current-song-output-length
-UseLabel=1
-Text=%\ \ \ 
-UpdatePeriod=1000
-Font=Cantarell 9
-

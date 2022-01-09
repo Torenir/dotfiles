@@ -11,10 +11,12 @@ mod3 + shift + {1,2,3,4,5,6}
 	wmctrl -t {0,1,2,3,4,5} -r :ACTIVE:
 
 #tile windows
-mod3 + {KP_Home,KP_Up,KP_Prior,KP_Left,KP_Begin,KP_Right,KP_End,KP_Down,KP_Next}
-	quicktile {top-left,top,top-right,left,center,right,bottom-left,bottom,bottom-right}
-mod3 + shift + KP_Begin
+mod3 + {KP_Home,KP_Up,KP_Prior,KP_Left,KP_Right,KP_End,KP_Down,KP_Next}
+	quicktile {top-left,top,top-right,left,right,bottom-left,bottom,bottom-right}
+mod3 + KP_Begin
 	wmctrl -r :ACTIVE: -b toggle,maximized_vert,maximized_horz
+mod3 + shift + KP_Begin
+	quicktile center
 
 #dunst
 XF86{HomePage,Mail,Search}
@@ -51,8 +53,6 @@ XF86Audio{Prev,Next}
 	audtool playlist-{reverse,advance}
 shift + XF86Audio{Prev,Next}
 	audtool playback-seek-relative {-10,10}
-XF86{AudioMute,Explorer,Calculator}
-	audtool set-current-playlist {1,2,3}
 
 #miscelaous
 mod3 + Escape
@@ -68,4 +68,4 @@ shift + Print
 mod3 + Return
 	kitty
 XF86Reload
-	dmenu_run -i -f -nf '#FFFFFF' -fn 'Cantarell-9'
+	dmenu_run -i -f -nf '#FFFFFF' -fn 'Cantarell-10'

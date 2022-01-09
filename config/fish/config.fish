@@ -13,6 +13,8 @@ alias lsblk='lsblk -f'
 alias radeontop='radeontop -c'
 alias py='python'
 alias rm='trash-put'
+alias :q='exit'
+alias cp='rclone copy --progress --ignore-existing'
 
 alias mpv='mpv --hwdec=auto'
 alias yt-mp3='youtube-dl --add-header 'Cookie:' --extract-audio --audio-format mp3'

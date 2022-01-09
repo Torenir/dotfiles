@@ -23,11 +23,12 @@
         <value type="int" value="19"/>
       </property>
       <property name="disable-struts" type="bool" value="true"/>
-      <property name="autohide-behavior" type="uint" value="1"/>
+      <property name="autohide-behavior" type="uint" value="2"/>
+      <property name="icon-size" type="uint" value="0"/>
     </property>
     <property name="panel-2" type="empty">
       <property name="position" type="string" value="p=4;x=1821;y=1055"/>
-      <property name="size" type="uint" value="18"/>
+      <property name="size" type="uint" value="19"/>
       <property name="position-locked" type="bool" value="true"/>
       <property name="autohide-behavior" type="uint" value="0"/>
       <property name="disable-struts" type="bool" value="true"/>
@@ -49,6 +50,7 @@
       </property>
       <property name="mode" type="uint" value="0"/>
       <property name="length-adjust" type="bool" value="true"/>
+      <property name="background-style" type="uint" value="0"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -85,6 +87,8 @@
     <property name="plugin-15" type="string" value="separator"/>
     <property name="plugin-16" type="string" value="systray">
       <property name="known-legacy-items" type="array">
+        <value type="string" value="ferdi"/>
+        <value type="string" value="pidgin"/>
         <value type="string" value="teams"/>
         <value type="string" value="discover-overlay"/>
         <value type="string" value="discord"/>
@@ -95,6 +99,8 @@
         <value type="string" value="flameshot"/>
       </property>
       <property name="known-items" type="array">
+        <value type="string" value="flameshot"/>
+        <value type="string" value="Cadence"/>
         <value type="string" value="obs"/>
         <value type="string" value="discord-overlay"/>
         <value type="string" value="QjackCtl"/>
