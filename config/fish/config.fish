@@ -23,4 +23,6 @@ alias sus='systemctl suspend'
 
 if [ (tty) = '/dev/tty1' ]
 	sx sh $HOME/.config/xinitrc
+else
+	tmux attach -t DEFAULT || tmux new -s DEFAULT
 end

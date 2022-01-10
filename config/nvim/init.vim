@@ -36,7 +36,7 @@ syntax on
 set cursorline
 set cursorcolumn
 set number
-set wrap!
+set wrap
 set showmatch
 set colorcolumn=80
 set noshowmode
