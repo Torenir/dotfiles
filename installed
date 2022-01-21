@@ -135,6 +135,7 @@ unclutter
 unzip
 veracrypt
 virtualbox
+virtualbox-host-dkms
 wget
 which
 wmctrl
