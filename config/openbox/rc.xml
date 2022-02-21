@@ -2,12 +2,12 @@
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <resistance>
     <strength>20</strength>
-    <screen_edge_strength>20</screen_edge_strength>
+    <screen_edge_strength>25</screen_edge_strength>
   </resistance>
   <focus>
     <focusNew>yes</focusNew>
     <followMouse>yes</followMouse>
-    <focusLast>yes</focusLast>
+    <focusLast>no</focusLast>
     <underMouse>no</underMouse>
     <focusDelay>200</focusDelay>
     <raiseOnFocus>yes</raiseOnFocus>
@@ -78,7 +78,7 @@
     </font>
   </theme>
   <desktops>
-    <number>6</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
@@ -101,6 +101,9 @@
     </keybind>
     <keybind key="A-ISO_Left_Tab">
       <action name="NextWindow"/>
+    </keybind>
+    <keybind key="Mod3-KP_Subtract">
+      <action name="ToggleOmnipresent"/>
     </keybind>
   </keyboard>
   <mouse>

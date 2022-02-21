@@ -1,6 +1,6 @@
 Command=pamixer --get-volume-human --source @DEFAULT_SOURCE@
-UseLabel=0
-Text=
-UpdatePeriod=1750
+UseLabel=1
+Text=\ 
+UpdatePeriod=2000
 Font=Cantarell 10
 

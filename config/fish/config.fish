@@ -14,7 +14,7 @@ alias radeontop='radeontop -c'
 alias py='python'
 alias rm='trash-put'
 alias :q='exit'
-alias cp='rclone copy --progress'
+alias cpr='rclone copy --progress'
 
 alias mpv='mpv --hwdec=auto'
 alias yt-mp3='youtube-dl --add-header 'Cookie:' --extract-audio --audio-format mp3'
@@ -24,5 +24,5 @@ alias sus='systemctl suspend'
 if [ (tty) = '/dev/tty1' ]
 	sx sh $HOME/.config/xinitrc
 else
-	tmux attach -t DEFAULT || tmux new -s DEFAULT
+	tmux attach -t DEFAULT 2> /dev/null || tmux new -s DEFAULT 2> /dev/null
 end

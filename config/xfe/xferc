@@ -1,44 +1,44 @@
 [OPTIONS]
-height=1080
+height=512
 mount_warn=1
 toolstoolbar=1
 folder_warn=1
 panel_view=0
-width=960
-confirm_drag_and_drop=1
+width=1280
 use_startup_notification=1
-root_warn=0
 preserve_date_warn=1
 confirm_delete=1
-no_script=0
-confirm_properties=1
-su_cmd="su -c \'nohup xfe >& /dev/null &\'"
+use_sudo=1
+root_warn=0
 auto_save_layout=1
 use_trash_bypass=0
 sudo_cmd=sudo -b xfe
 root_mode=1
+su_cmd="su -c \'nohup xfe >& /dev/null &\'"
 confirm_overwrite=1
 paneltoolbar=1
 confirm_delete_emptydir=1
 startdir_mode=1
 ask_before_copy=1
+no_script=0
 mount_messages=1
 confirm_execute=1
-locationbar=1
+confirm_properties=1
 twopanels_lpanel_pct=0.5
 vert_panels=1
 use_trash_can=1
 confirm_trash=1
-treetwopanels_lpanel_pct=0.425
-use_sudo=1
-treepanel_tree_pct=0.227
-treetwopanels_tree_pct=0.156
-generaltoolbar=1
+treetwopanels_lpanel_pct=0.421
 status=1
+treepanel_tree_pct=0.225
+treetwopanels_tree_pct=0.153
+generaltoolbar=1
 xfv_replaced=1
+locationbar=1
+confirm_drag_and_drop=1
 
 [HISTORY]
-open=okular:kexi-3.2:kitty nvim:mpv --player-operation-mode=pseudo-gui:mpv:
+open=falkon:okular:kexi-3.2:kitty nvim:mpv --player-operation-mode=pseudo-gui:mpv:
 filter=*:
 
 [KEYBINDINGS]
@@ -116,23 +116,47 @@ empty_trash_can=Ctrl-Del
 rotate_left=Ctrl-L
 
 [RIGHT PANEL]
-type_size=120
+type_size=481
 deldate_size=150
 origpath_size=200
 liststyle=12582912
-attr_size=120
-user_size=60
+attr_size=481
+user_size=240
 hiddenfiles=0
 dirs_first=1
-ext_size=120
-grou_size=60
-modd_size=181
+ext_size=481
+grou_size=240
+modd_size=725
 ignore_case=0
 sort_func=ascending
 showthumbnails=0
-name_size=241
+name_size=965
 lastdir=/home/wojciech
-size_size=72
+size_size=288
+
+[SEARCH PANEL]
+type_size=100
+search_ypos=216
+search_xpos=2145
+liststyle=0
+attr_size=100
+user_size=50
+search_height=480
+find_hidden=0
+dir_size=150
+ext_size=100
+sort_func=ascendingCase
+grou_size=50
+find_ignorecase=0
+search_width=650
+modd_size=150
+grep_ignorecase=0
+ignore_case=1
+moreoptions=0
+showthumbnails=0
+name_size=200
+dirs_first=1
+size_size=60
 
 [PROGS]
 txtviewer=kitty nvim
@@ -144,23 +168,23 @@ txteditor=kitty nvim
 videoplayer=mpv --player-operation-mode=pseudo-gui
 
 [LEFT PANEL]
-type_size=120
+type_size=161
 deldate_size=200
 origpath_size=200
 liststyle=12582912
-attr_size=120
-user_size=60
-hiddenfiles=1
+attr_size=161
+user_size=82
+hiddenfiles=0
 dirs_first=1
-ext_size=120
-grou_size=60
-modd_size=181
+ext_size=161
+grou_size=82
+modd_size=244
 ignore_case=0
 sort_func=ascending
 showthumbnails=0
-name_size=241
-lastdir=/mnt/others/MR DATA/Torrents
-size_size=72
+name_size=323
+lastdir=/home/wojciech/Downloads
+size_size=96
 
 [SETTINGS]
 listforecolor=#dfdfdf
@@ -225,6 +249,7 @@ pas=<txteditor>,<txtviewer>,<txteditor>;Pascal Source;text_32x32.png;text_16x16.
 zip=<archiver>,<archiver>,<archiver>;ZIP Archive;zip_32x32.png;zip_16x16.png;;
 makefile=<txteditor>,<txtviewer>,<txteditor>;Makefile;make_32x32.png;make_16x16.png;;
 spec=<txteditor>,<txtviewer>,<txteditor>;RPM Spec;rpm_32x32.png;rpm_16x16.png;;
+anime=kitty nvim;Document;;;;
 dia=dia,dia,dia;Dia Drawing;dia_32x32.png;dia_16x16.png;;
 in=<txteditor>,<txtviewer>,<txteditor>;Configure Makefile;make_32x32.png;make_16x16.png;;
 xlt=localc,localc,localc;Excel Template;xls_32x32.png;xls_16x16.png;;
@@ -282,9 +307,11 @@ php=firefox,firefox,<txteditor>;PHP Source;html_32x32.png;html_16x16.png;;
 mpeg3=<audioplayer>,<audioplayer>,audacity;MPEG Audio;mp3_32x32.png;mp3_16x16.png;;
 xls=localc,localc,localc;Excel Spreadsheet;xls_32x32.png;xls_16x16.png;;
 rb=<txteditor>,<txtviewer>,<txteditor>;Ruby Source;text_32x32.png;text_16x16.png;;
+rc=kitty nvim;Document;;;;
 mov=<videoplayer>,<videoplayer>,;MPEG Video;video_32x32.png;video_16x16.png;;
 sce=<txteditor>,<txtviewer>,<txteditor>;Scilab Script;sci_32x32.png;sci_16x16.png;;
 vhdl=<txteditor>,<txtviewer>,<txteditor>;Vhdl Source;vhdl_32x32.png;vhdl_16x16.png;;
+part=mpv;Document;;;;
 csh=,<txtviewer>,<txteditor>;C-Shell Script;shell_32x32.png;shell_16x16.png;;
 sci=<txteditor>,<txtviewer>,<txteditor>;Scilab Function;sci_32x32.png;sci_16x16.png;;
 rm=realplay,realplay,;RealPlayer Video;video_32x32.png;video_16x16.png;;

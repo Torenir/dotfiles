@@ -3,12 +3,12 @@ mod3 + {KP_Add,KP_Enter}
 	wmctrl -r :ACTIVE: -b toggle,{above,fullscreen}
 
 #switch workspaces
-mod3 + {1,2,3,4,5,6}
-	wmctrl -s {0,1,2,3,4,5}
+mod3 + {1,2,3,4,5,6,7,8,9,0}
+	wmctrl -s {0,1,2,3,4,5,6,7,8,9}
 
 #move windows across workspaces
-mod3 + shift + {1,2,3,4,5,6}
-	wmctrl -t {0,1,2,3,4,5} -r :ACTIVE:
+mod3 + shift + {1,2,3,4,5,6,7,8,9,0}
+	wmctrl -t {0,1,2,3,4,5,6,7,8,9} -r :ACTIVE:
 
 #tile windows
 mod3 + {KP_Home,KP_Up,KP_Prior,KP_Left,KP_Right,KP_End,KP_Down,KP_Next}
@@ -66,6 +66,6 @@ Print
 shift + Print
 	flameshot gui
 mod3 + Return
-	kitty
+	st
 XF86Reload
 	dmenu_run -i -f -nf '#FFFFFF' -fn 'Cantarell-10'
