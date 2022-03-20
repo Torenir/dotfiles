@@ -2,5 +2,5 @@ Command=audtool current-song
 UseLabel=0
 Text=
 UpdatePeriod=750
-Font=Cantarell 10
+Font=Liberation Sans 10
 

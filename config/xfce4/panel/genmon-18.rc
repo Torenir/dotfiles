@@ -2,5 +2,5 @@ Command=audtool get-volume
 UseLabel=1
 Text=\ \ \ 
 UpdatePeriod=2000
-Font=Cantarell 10
+Font=Liberation Sans 10
 

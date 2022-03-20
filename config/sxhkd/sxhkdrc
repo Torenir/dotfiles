@@ -56,6 +56,8 @@ shift + XF86Audio{Prev,Next}
 
 #miscelaous
 mod3 + Escape
+	xset dpms force off
+mod3 + shift + Escape
 	slock
 mod3 + BackSpace
 	wmctrl -c :ACTIVE:
@@ -68,4 +70,4 @@ shift + Print
 mod3 + Return
 	st
 XF86Reload
-	dmenu_run -i -f -nf '#FFFFFF' -fn 'Cantarell-10'
+	dmenu_run -i -f -nf '#FFFFFF' -fn 'LiberationSans-10'
