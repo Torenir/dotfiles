@@ -22,23 +22,19 @@ mod3 + shift + KP_Begin
 XF86{HomePage,Mail,Search}
 	dunstctl {close-all,close,history-pop}
 
-#discord
-mod3 + {Left,Down,Right}
-	xdotool key XF86{WLAN,UWB,WWAN}
-
 #audio
 mod3 + Insert
-	pactl set-source-mute @DEFAULT_SOURCE@ toggle
+	pactl set-source-mute @DEFAULT_SOURCE@ toggle; xfce4-panel --plugin-event=genmon-11:refresh:bool:true
 mod3 + Delete
-	pactl set-sink-mute @DEFAULT_SINK@ toggle
+	pactl set-sink-mute @DEFAULT_SINK@ toggle; xfce4-panel --plugin-event=genmon-15:refresh:bool:true
 mod3 + {Home,Prior}
-	pactl set-source-volume @DEFAULT_SOURCE@ {-2%,+2%}
+	pactl set-source-volume @DEFAULT_SOURCE@ {-2%,+2%}; xfce4-panel --plugin-event=genmon-11:refresh:bool:true
 mod3 + shift + {Home,Prior}
-	pactl set-source-volume @DEFAULT_SOURCE@ {-10%,+10%}
+	pactl set-source-volume @DEFAULT_SOURCE@ {-10%,+10%}; xfce4-panel --plugin-event=genmon-11:refresh:bool:true
 mod3 + {End,Next}
-	pactl set-sink-volume @DEFAULT_SINK@ {-2%,+2%}
+	pactl set-sink-volume @DEFAULT_SINK@ {-2%,+2%}; xfce4-panel --plugin-event=genmon-15:refresh:bool:true
 mod3 + shift + {End,Next}
-	pactl set-sink-volume @DEFAULT_SINK@ {-10%,+10%}
+	pactl set-sink-volume @DEFAULT_SINK@ {-10%,+10%}; xfce4-panel --plugin-event=genmon-15:refresh:bool:true
 
 #audacious
 XF86AudioPlay
@@ -46,11 +42,11 @@ XF86AudioPlay
 shift + XF86AudioPlay
 	audtool playback-seek 0
 XF86Audio{RaiseVolume,LowerVolume}
-	audtool set-volume {+2%,-2%}
+	audtool set-volume {+2%,-2%}; xfce4-panel --plugin-event=genmon-18:refresh:bool:true
 shift + XF86Audio{RaiseVolume,LowerVolume}
-	audtool set-volume {+10%,-10%}
+	audtool set-volume {+10%,-10%}; xfce4-panel --plugin-event=genmon-18:refresh:bool:true
 XF86Audio{Prev,Next}
-	audtool playlist-{reverse,advance}
+	audtool playlist-{reverse,advance}; xfce4-panel --plugin-event=genmon-13:refresh:bool:true; xfce4-panel --plugin-event=genmon-14:refresh:bool:true
 shift + XF86Audio{Prev,Next}
 	audtool playback-seek-relative {-10,10}
 

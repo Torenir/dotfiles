@@ -1,6 +1,6 @@
 Command=audtool get-volume
 UseLabel=1
-Text=\ \ \ 
-UpdatePeriod=2000
+Text=\ \ 
+UpdatePeriod=600000
 Font=Liberation Sans 10
 

@@ -1,0 +1,8 @@
+config - directory with config files
+themes - xfwm theme that I used before I switched to openbox
+drop - drop all the caches and clear swap
+installed - all packages installed by me on my main pc
+psong - play song from audacious playlist 'psong 237'
+shortpath - short given path to last 3 directories
+ssong - list songs with their numbers in notifications. \
+like psong uses one parameter and it's a word you want to find in songs title'

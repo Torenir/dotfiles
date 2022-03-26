@@ -1,6 +1,6 @@
 Command=pamixer --get-volume-human --sink @DEFAULT_SINK@
 UseLabel=1
 Text=\ \ 
-UpdatePeriod=2000
+UpdatePeriod=600000
 Font=Liberation Sans 10
 
