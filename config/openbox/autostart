@@ -3,22 +3,10 @@ picom -C -r 0 -o 0 -i 1 -m 1 -D 5 -b
 xfce4-panel &
 xrdb -merge ~/.config/Xresources &
 dunst &
-systembus-notify &
 unclutter --timeout 2 --jitter 4 &
 flameshot &
 sxhkd &
 transmission-daemon --port 9091 --allowed "127.0.0.1" &
 searx-run &
-sleep 4
 pactl load-module module-remap-sink sink_name=mic-monitor &
-dbus-launch kdeconnect-indicator &
-
-setxkbmap -layout pl
-xset r rate 222 30
-xmodmap -e "clear mod4"
-xmodmap -e "add mod4 = Super_L"
-xmodmap -e "clear mod3"
-xmodmap -e "keycode 135 = Super_R"
-xmodmap -e "add mod3 = Super_R"
-xmodmap -e "keycode 91 = period period"
-xmodmap -e "keycode 52 = z Z z Z zstroke Zstroke zstroke"
+audacious -H &

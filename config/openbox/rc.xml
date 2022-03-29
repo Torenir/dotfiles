@@ -78,7 +78,7 @@
     </font>
   </theme>
   <desktops>
-    <number>4</number>
+    <number>5</number>
     <firstdesk>1</firstdesk>
     <names>
       <name>1</name>
@@ -91,15 +91,15 @@
     <popupTime>0</popupTime>
   </desktops>
   <keyboard>
-    <keybind key="A-grave">
+    <keybind key="Mod3-grave">
       <action name="Move"/>
     </keybind>
-    <keybind key="A-S-grave">
+    <keybind key="Mod3-S-grave">
       <action name="Resize">
         <edge>bottomright</edge>
       </action>
     </keybind>
-    <keybind key="A-ISO_Left_Tab">
+    <keybind key="Mod3-ISO_Left_Tab">
       <action name="NextWindow"/>
     </keybind>
     <keybind key="Mod3-KP_Subtract">

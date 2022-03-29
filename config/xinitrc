@@ -1,1 +1,13 @@
+#!/bin/sh
+setxkbmap -layout pl
+xset r off
+xmodmap -e "clear mod4"
+xmodmap -e "clear mod3"
+xmodmap -e "keycode 78 = Super_L"
+xmodmap -e "keycode 135 = Super_R"
+xmodmap -e "keycode 133 = Super_R"
+xmodmap -e "add mod4 = Super_L"
+xmodmap -e "add mod3 = Super_R"
+xmodmap -e "keycode 91 = period period"
+xmodmap -e "keycode 52 = z Z z Z zstroke Zstroke zstroke"
 exec openbox-session

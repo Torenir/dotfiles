@@ -15,9 +15,7 @@ alias vifm='rm ~/.config/vifm/vifminfo.json; /bin/vifm'
 alias yt-mp3='youtube-dl --add-header "Cookie:" --extract-audio --audio-format mp3'
 alias steam='LD_PRELOAD="~/.config/altlibsteam/sdl_block_screensaver_inhibit.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 /bin/steam -silent -no-browser steam://open/minigameslist'
 
-if [ $(tty) == '/dev/tty1' ]
+if [ $(tty) != '/dev/tty1' ]
 then
-	sx sh $HOME/.config/xinitrc
-else
 	tmux attach -t DEFAULT 2> /dev/null || tmux new -s DEFAULT 2> /dev/null
 fi

@@ -13,7 +13,6 @@ certbot
 ckan
 dash
 dashbinsh
-dendrite
 dmenu
 dmenu_bw-git
 dunst
@@ -44,7 +43,6 @@ img2pdf
 jdk-openjdk
 jdk8-openjdk
 jq
-kdeconnect
 krita
 kvantum
 lazygit
@@ -61,9 +59,11 @@ m4
 make
 man-db
 man-pages
+matrix-synapse
 mediainfo
 mlocate
 multimc5
+nats-server
 nbtexplorer
 neofetch
 neovim-remote
@@ -89,6 +89,7 @@ picom
 pipewire-alsa
 pipewire-pulse
 pkgconf
+powertop
 protontricks
 pv
 python-pyglet
@@ -97,6 +98,7 @@ qt5ct-kde
 quicktile-git
 radeontop
 rclone
+scrcpy
 scrypt
 searx
 signal-desktop-beta-bin
@@ -104,7 +106,6 @@ slock
 smartmontools
 steam
 sudo
-sx
 sxhkd
 sxiv
 systemd-boot-pacman-hook
@@ -159,6 +160,7 @@ xorg-xdriinfo
 xorg-xev
 xorg-xgamma
 xorg-xhost
+xorg-xinit
 xorg-xinput
 xorg-xkbcomp
 xorg-xkbevd
