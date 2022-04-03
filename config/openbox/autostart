@@ -6,6 +6,7 @@ dunst &
 unclutter --timeout 2 --jitter 4 &
 flameshot &
 sxhkd &
+keynav "loadconfig ~/.config/keynavrc" &
 transmission-daemon --port 9091 --allowed "127.0.0.1" &
 searx-run &
 pactl load-module module-remap-sink sink_name=mic-monitor &

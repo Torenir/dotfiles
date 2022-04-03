@@ -30,7 +30,7 @@ mod3 + Delete
 mod3 + {Home,Prior,shift + Home,shift + Prior}
 	pactl set-source-volume @DEFAULT_SOURCE@ {-1%,+1%,-10%,10%}; xfce4-panel --plugin-event=genmon-11:refresh:bool:true
 mod3 + {End,Next,shift + End,shift + Next}
-	pactl set-sink-volume @DEFAULT_SINK@ {-1%,+1%}; xfce4-panel --plugin-event=genmon-15:refresh:bool:true
+	pactl set-sink-volume @DEFAULT_SINK@ {-1%,+1%,-10%,+10%}; xfce4-panel --plugin-event=genmon-15:refresh:bool:true
 
 #audacious
 mod4 + Return
@@ -60,10 +60,10 @@ mod4 + Print
 mod3 + Return
 	st
 XF86Reload
-	dmenu_run -i -f -nf '#FFFFFF' -fn 'LiberationSans-10'
+	dmenu_run
 
 
 XF86{HomePage,Mail,Search,Tools,AudioPlay,AudioPrev,AudioNext,AudioLowerVolume,AudioRaiseVolume,AudioMute}
-	{falkon,element-desktop,signal-desktop-beta,freetube,steam,multimc,helvum,pavucontrol,gimp,krita}
+	{falkon,element-desktop,signal-desktop-beta,freetube,sh -c 'LD_PRELOAD="~/.config/altlibsteam/sdl_block_screensaver_inhibit.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 /bin/steam -silent -no-browser steam://open/minigameslist',multimc,helvum,pavucontrol,gimp,krita}
 mod4 + {Pause,shift + Pause}
 	{gcolor2,gucharmap}
