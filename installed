@@ -41,6 +41,7 @@ jdk8-openjdk
 jq
 krita
 kvantum
+kvantum-theme-nordic-git
 lazygit
 libappimage
 libreoffice-fresh
@@ -58,7 +59,6 @@ man-pages
 matrix-synapse
 mediainfo
 mlocate
-multimc5
 nats-server
 nbtexplorer
 neofetch
@@ -66,7 +66,8 @@ neovim-qt
 neovim-remote
 neovim-symlinks
 nitrogen
-nordic-theme-git
+nordic-darker-theme
+nordic-theme
 noto-fonts-emoji
 obconf
 obs-studio

@@ -1,6 +1,6 @@
 Command=echo
 UseLabel=1
-Text=%\ \ 
+Text=%\ 
 UpdatePeriod=600000
 Font=Liberation Sans 10
 

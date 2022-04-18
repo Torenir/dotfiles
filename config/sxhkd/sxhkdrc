@@ -37,10 +37,8 @@ mod4 + Return
 	audtool playback-playpause
 mod4 + shift + Return
 	audtool playback-seek 0
-mod4 + {Insert,Delete}
-	audtool set-volume {+2%,-2%}; xfce4-panel --plugin-event=genmon-18:refresh:bool:true
-mod4 + shift + {Insert,Delete}
-	audtool set-volume {+10%,-10%}; xfce4-panel --plugin-event=genmon-18:refresh:bool:true
+mod4 + {Insert,Delete,shift + Insert,shift + Delete}
+	audtool set-volume {+1%,-1%,+10%,-10%}; xfce4-panel --plugin-event=genmon-18:refresh:bool:true
 mod4 + {apostrophe,backslash}
 	audtool playlist-{reverse,advance}; xfce4-panel --plugin-event=genmon-13:refresh:bool:true; xfce4-panel --plugin-event=genmon-14:refresh:bool:true
 mod4 + bracket{left,right}
@@ -64,6 +62,6 @@ XF86Reload
 
 
 XF86{HomePage,Mail,Search,Tools,AudioPlay,AudioPrev,AudioNext,AudioLowerVolume,AudioRaiseVolume,AudioMute}
-	{falkon,element-desktop,signal-desktop-beta,freetube,sh -c 'LD_PRELOAD="~/.config/altlibsteam/sdl_block_screensaver_inhibit.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 /bin/steam -silent -no-browser steam://open/minigameslist',multimc,helvum,pavucontrol,gimp,krita}
+	{falkon,element-desktop,signal-desktop-beta,freetube,sh -c 'LD_PRELOAD="~/.config/altlibsteam/sdl_block_screensaver_inhibit.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 /bin/steam -silent -no-browser steam://open/minigameslist',ultimmc,helvum,pavucontrol,gimp,krita}
 mod4 + {Pause,shift + Pause}
 	{gcolor2,gucharmap}
