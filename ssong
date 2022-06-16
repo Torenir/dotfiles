@@ -1,7 +1,3 @@
 #!/bin/sh
 
-audtool playlist-display | grep -i $1 | awk -F '   ' '{print $1}' | while read song; do
-	songn=$(echo $song | awk '{print $1}')
-	songt=$(echo $song | awk -F '|' '{print $2}')
-	notify-send $songn "$songt"
-done
+audtool playlist-jump $(audtool playlist-display | tail -n +2 | dmenu -i -l 10 | cut -d '|' -f 1)

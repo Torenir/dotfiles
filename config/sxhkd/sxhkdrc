@@ -1,5 +1,5 @@
 #above fullscreen
-mod3 + {KP_Add,KP_Enter}
+mod3 + {KP_Add,KP_Subtract}
 	wmctrl -r :ACTIVE: -b toggle,{above,fullscreen}
 
 #switch workspaces
@@ -12,56 +12,53 @@ mod3 + shift + {1,2,3,4,5,6,7,8,9,0}
 
 #move windows across monitors
 mod3 + {KP_Divide,KP_Multiply}
-	xdotool windowmove $(xdotool getwindowfocus) {0 0,1920 56}
+	xdotool windowmove $(xdotool getwindowfocus) {0 0,1920 80}
 
 #tile windows
-mod3 + {KP_Home,KP_Up,KP_Prior,KP_Left,KP_Right,KP_End,KP_Down,KP_Next,KP_Begin}
-	quicktile {top-left,top,top-right,left,right,bottom-left,bottom,bottom-right,center}
+#mod3 + {KP_Home,KP_Up,KP_Prior,KP_Left,KP_Right,KP_End,KP_Down,KP_Next,KP_Begin}
+#	quicktile {top-left,top,top-right,left,right,bottom-left,bottom,bottom-right,center}
 
 #dunst
-mod4 + {Prior,shift + Prior}
-	dunstctl {close-all,history-pop}
+#mod3 + {KP_Insert,shift + KP_Insert}
+#	dunstctl {close-all,history-pop}
 
 #audio
-mod3 + Insert
-	pactl set-source-mute @DEFAULT_SOURCE@ toggle; xfce4-panel --plugin-event=genmon-11:refresh:bool:true
-mod3 + Delete
-	pactl set-sink-mute @DEFAULT_SINK@ toggle; xfce4-panel --plugin-event=genmon-15:refresh:bool:true
-mod3 + {Home,Prior,shift + Home,shift + Prior}
-	pactl set-source-volume @DEFAULT_SOURCE@ {-1%,+1%,-10%,10%}; xfce4-panel --plugin-event=genmon-11:refresh:bool:true
-mod3 + {End,Next,shift + End,shift + Next}
-	pactl set-sink-volume @DEFAULT_SINK@ {-1%,+1%,-10%,+10%}; xfce4-panel --plugin-event=genmon-15:refresh:bool:true
+mod3 + Pause
+	pactl set-source-mute @DEFAULT_SOURCE@ toggle
+mod3 + Scroll_Lock
+	pactl set-sink-mute @DEFAULT_SINK@ toggle
+mod3 + {Next,Prior,shift + Next,shift + Prior}
+	pactl set-source-volume @DEFAULT_SOURCE@ {-1%,+1%,-10%,+10%}
+mod3 + {End,Home,shift + End,shift + Home}
+	pactl set-sink-volume @DEFAULT_SINK@ {-1%,+1%,-10%,+10%}
 
 #audacious
-mod4 + Return
+mod3 + Return
 	audtool playback-playpause
-mod4 + shift + Return
+mod3 + shift + Return
 	audtool playback-seek 0
-mod4 + {Insert,Delete,shift + Insert,shift + Delete}
-	audtool set-volume {+1%,-1%,+10%,-10%}; xfce4-panel --plugin-event=genmon-18:refresh:bool:true
-mod4 + {apostrophe,backslash}
-	audtool playlist-{reverse,advance}; xfce4-panel --plugin-event=genmon-13:refresh:bool:true; xfce4-panel --plugin-event=genmon-14:refresh:bool:true
-mod4 + bracket{left,right}
+mod3 + {Insert,Delete,shift + Insert,shift + Delete}
+	audtool set-volume {+1%,-1%,+10%,-10%}
+mod3 + {Left,Right}
+	audtool playlist-{reverse,advance}
+mod3 + {Down,Up}
 	audtool playback-seek-relative {-5,5}
 
 #miscelaous
 mod3 + Escape
-	slock &; xset dpms force off
-mod4 + BackSpace
+	slock
+mod3 + BackSpace
 	wmctrl -c :ACTIVE:
-mod4 + shift + BackSpace
+mod3 + shift + BackSpace
 	xdotool getwindowfocus windowkill
+mod3 + Print
+	flameshot full -p ~/Pictures/Screenshots/
 Print
-	flameshot full -p ~/Pictures/screenshots/
-mod4 + Print
 	flameshot gui
-mod3 + Return
-	st
+mod3 + space
+	kitty
 XF86Reload
 	dmenu_run
 
-
-XF86{HomePage,Mail,Search,Tools,AudioPlay,AudioPrev,AudioNext,AudioLowerVolume,AudioRaiseVolume,AudioMute}
-	{falkon,element-desktop,signal-desktop-beta,freetube,sh -c 'LD_PRELOAD="~/.config/altlibsteam/sdl_block_screensaver_inhibit.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 /bin/steam -silent -no-browser steam://open/minigameslist',ultimmc,helvum,pavucontrol,gimp,krita}
-mod4 + {Pause,shift + Pause}
-	{gcolor2,gucharmap}
+XF86{HomePage,Mail,Search,Tools,AudioPlay,AudioPrev,AudioNext,AudioLowerVolume,AudioMute,Explorer,Calculator}
+	{freetube,steam,ultimmc,audacious,kitty pulsemixer,gimp,gcolor3,kquitapp5 plasmashell || killall plasmashell && kstart5 plasmashell,signal-desktop-beta,falkon,nemo}

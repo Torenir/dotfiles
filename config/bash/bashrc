@@ -1,25 +1,28 @@
-export PS1='\e[34m\e[1m❯❯❯\e(B\e[m '
-export PATH="$HOME/bin:$PATH"
-
-export QT_QPA_PLATFORMTHEME=qt5ct
-#force use of gtk3-nocsd
-export GTK_CSD=0
-export LD_PRELOAD=/usr/lib/libgtk3-nocsd.so.0
+export PS1='\e[34m\e[1m🡺  \e(B\e[m'
 
 alias lsblk='lsblk -f'
-alias radeontop='radeontop -c'
 alias cpr='rclone copy --progress'
 alias cps='rclone sync --progress'
 alias rm='trash-put'
 alias :q='exit'
-alias vifm='rm ~/.config/vifm/vifminfo.json; /bin/vifm'
+alias vifm='rm ~/.config/vifm/vifminfo; /bin/vifm'
+alias btop='btop --utf-force'
 alias yt-mp3='youtube-dl --add-header "Cookie:" --extract-audio --audio-format mp3'
-alias steam='LD_PRELOAD="~/.config/altlibsteam/sdl_block_screensaver_inhibit.so" SDL_VIDEO_ALLOW_SCREENSAVER=1 /bin/steam -silent -no-browser steam://open/minigameslist'
+
+tmux_kill()
+{
+	sessions=$(tmux list-sessions | grep --invert-match attached | \
+		grep '-' | awk -F ':' '{print $1}')
+	for s in $sessions; do
+		tmux kill-session -t $s
+	done
+}
 
 tmux_new()
 {
-tmux new -ds $1 2> /dev/null
-tmux new -t $1 2> /dev/null
+	tmux_kill 2> /dev/null
+	tmux new -ds $1 2> /dev/null
+	tmux new -t $1 2> /dev/null
 }
 
 if [ $(tty) != '/dev/tty1' ]; then
